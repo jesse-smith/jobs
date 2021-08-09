@@ -1,0 +1,189 @@
+
+2020-11-21 19:20:31
+Error in error_notify(operation = paste("`library()`, `import()`", in_file)) : 
+  could not find function "error_notify"
+Calls: capture.output ... withVisible -> eval -> eval -> run_script -> tryCatch
+
+2020-11-21 19:22:33
+Error in tryCatch(options(rlang_backtrace_on_error = "branch", error = rlang::entrace),  : 
+  condition handlers must be specified with a condition class
+Calls: capture.output ... withVisible -> eval -> eval -> run_script -> tryCatch
+
+2020-11-21 19:24:04
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+New names:
+* `` -> ...8
+* `` -> ...9
+* `` -> ...10
+* `` -> ...11
+* `` -> ...12
+* ...
+Error: Saving a widget with selfcontained = TRUE requires pandoc. For details see:
+https://github.com/rstudio/rmarkdown/blob/master/PANDOC.md
+
+Warning messages:
+1: package 'DT' was built under R version 4.0.3 
+2: Problem with `mutate()` input `dt_visit`.
+i NA, NA was malformed
+i Input `dt_visit` is `coalesce_across(contains("Date") & contains("Visit")) %>% convert_to_date(character_fun = cast_date)`. 
+3: NA, NA was malformed 
+4: Problem with `mutate()` input `n_violations`.
+i NAs introduced by coercion
+i Input `n_violations` is `coalesce_across(contains("Violations")) %>% as.integer()`. 
+5: In coalesce_across(contains("Violations")) %>% as.integer() :
+  NAs introduced by coercion
+
+2020-11-21 19:26:56
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+New names:
+* `` -> ...8
+* `` -> ...9
+* `` -> ...10
+* `` -> ...11
+* `` -> ...12
+* ...
+
+2020-11-21 20:18:45
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Processing data...
+New names:
+* `` -> ...8
+* `` -> ...9
+* `` -> ...10
+* `` -> ...11
+* `` -> ...12
+* ...
+Creating table...
+Sending notification...
+Managing backups...
+Error : [EEXIST] Failed to copy 'V:/Compliance/Inspection Data for Publishing/Grand List of Inspections.xlsx' to 'V:/Compliance/Inspection Data for Publishing/Data Archive/inspection_data_2020-11-21.xlsx': file already exists
+In addition: Warning messages:
+1: package 'DT' was built under R version 4.0.3 
+2: Problem with `mutate()` input `dt_visit`.
+i NA, NA was malformed
+i Input `dt_visit` is `coalesce_across(contains("Date") & contains("Visit")) %>% convert_to_date(character_fun = cast_date)`. 
+3: NA, NA was malformed 
+4: Problem with `mutate()` input `n_violations`.
+i NAs introduced by coercion
+i Input `n_violations` is `coalesce_across(contains("Violations")) %>% as.integer()`. 
+5: In coalesce_across(contains("Violations")) %>% as.integer() :
+  NAs introduced by coercion
+Error : [EEXIST] Failed to copy 'V:/Compliance/Inspection Data for Publishing/Table/inspection_table_2020-11-21.html' to 'V:/Compliance/Inspection Data for Publishing/Table/Archive/inspection_table_2020-11-21.html': file already exists
+Done.
+
+2020-11-23 17:17:59
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Processing data...
+New names:
+* `` -> ...9
+* `` -> ...10
+* `` -> ...11
+* `` -> ...12
+* `` -> ...13
+* ...
+Creating table...
+Sending notification...
+Managing backups...
+Done.
+
+2020-11-25 11:16:12
+Processing data...
+New names:
+* `` -> ...9
+* `` -> ...10
+* `` -> ...11
+* `` -> ...12
+* `` -> ...13
+* ...
+Creating table...
+
+Warning messages:
+1: Problem with `mutate()` input `dt_visit`.
+[34mi[39m NA, NA was malformed
+[34mi[39m Input `dt_visit` is `coalesce_across(contains("Date") & contains("Visit")) %>% convert_to_date(character_fun = cast_date)`. 
+2: NA, NA was malformed 
+3: Problem with `mutate()` input `n_violations`.
+[34mi[39m NAs introduced by coercion
+[34mi[39m Input `n_violations` is `coalesce_across(contains("Violations")) %>% as.integer()`. 
+4: In coalesce_across(contains("Violations")) %>% as.integer() :
+  NAs introduced by coercion
+
+2020-12-15 02:00:02
+Error in loadNamespace(name) : there is no package called 'coviReport'
+Error in paste0("The <b>COVID-19 Business Inspections</b> table has been updated (on <i>",  : 
+  cannot coerce type 'closure' to vector of type 'character'
+Calls: capture.output ... withVisible -> eval -> eval -> run_script -> paste0
+
+2020-12-15 08:47:39
+Loading inspections data...
+New names:
+* `` -> ...9
+* `` -> ...10
+* `` -> ...11
+* `` -> ...12
+* `` -> ...13
+* ...
+Preparing inspections data...
+mutate: new variable 'dt_visit' (Date) with 124 unique values and 0% NA
+        new variable 'nm_business' (character) with 2,002 unique values and <1% NA
+        new variable 'addr_business' (character) with 2,479 unique values and 1% NA
+        new variable 'n_violations' (integer) with 10 unique values and 14% NA
+        new variable 'dt_closed' (Date) with 6 unique values and >99% NA
+filter: removed 415 rows (14%), 2,562 rows remaining
+Creating inspections table...
+Saving inspections table...
+Managing inspections archive...
+Done.
+Error in paste0("The <b>COVID-19 Business Inspections</b> table has been updated (on <i>",  : 
+  cannot coerce type 'closure' to vector of type 'character'
+Calls: capture.output ... withVisible -> eval -> eval -> run_script -> paste0
+In addition: Warning messages:
+1: Problem with `mutate()` input `dt_visit`.
+i NA, NA, NA, NA, NA, NA was malformed
+i Input `dt_visit` is ``%>%`(...)`. 
+2: NA, NA, NA, NA, NA, NA was malformed 
+3: Problem with `mutate()` input `n_violations`.
+i NAs introduced by coercion
+i Input `n_violations` is ``%>%`(...)`. 
+4: In coviData::coalesce_across(dplyr::contains("violations")) %>%  :
+  NAs introduced by coercion

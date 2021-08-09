@@ -1,0 +1,362 @@
+Error in loadNamespace(name) : there is no package called 'covidsms'
+Calls: capture.output ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
+Error in loadNamespace(name) : there is no package called 'covidsms'
+Calls: capture.output ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
+Error: Problem with `mutate()` input `STATE`.
+x object 'states' not found
+i Input `STATE` is `std_state(.data[["patient_state"]])`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::prep_positive()
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/prep_positive.R:24:2
+  9. +-covidsms:::validate_sms_data(.)
+ 10. | \-coviData::assert_dataframe(.data) C:/Users/Jesse.Smith/Documents/covidsms/R/validate_sms_data.R:4:2
+ 11. |   \-base::is.data.frame(x) C:/Users/Jesse.Smith/Documents/coviData/R/assert.R:22:2
+ 12. +-covidsms::as_date_tbl(., date = date) C:/Users/Jesse.Smith/Documents/covidsms/R/validate_sms_data.R:4:2
+ 13. | \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/class-date_tbl.R:49:2
+ 14. +-covidsms::validate_date_tbl(.)
+ 15. | \-covidsms::is_date_tbl(x) C:/Users/Jesse.Smith/Documents/covidsms/R/class-date_tbl.R:89:2
+ 16. +-covidsms::new_date_tbl(., date = date) C:/Users/Jesse.Smith/Documents/covidsms/R/class-date_tbl.R:89:2
+ 17. | \-tibble::new_tibble(x, date = date, nrow = nrow, class = "date_tbl") C:/Users/Jesse.Smith/Documents/covidsms/R/class-date_tbl.R:78:2
+ 18. +-tibble::as_tibble(...) C:/Users/Jesse.Smith/Documents/covidsms/R/class-date_tbl.R:78:2
+ 19. +-covidsms::as_chr_ascii(.)
+ 20. +-covidsms:::remove_temp(.) C:/Users/Jesse.Smith/Documents/covidsms/R/as_chr_ascii.R:12:2
+ 21. | \-dplyr::select(.data, -dplyr::matches(c("^[.].*_tmp_$", "^[.]tmp_$"))) C:/Users/Jesse.Smith/Documents/covidsms/R/prep_positive.R:132:2
+ 22. +-covidsms:::filter_by_lab(.) C:/Users/Jesse.Smith/Documents/covidsms/R/prep_positive.R:132:2
+ 23. | +-".lab_tmp_" %in% colnames(.data) C:/Users/Jesse.Smith/Documents/covidsms/R/filter_by_lab.R:5:2
+ 24. | \-base::colnames(.data) C:/Users/Jesse.Smith/Documents/covidsms/R/filter_by_lab.R:5:2
+ 25. |   \-base::is.data.frame(x)
+ 26. +-covidsms:::distinct_test_date(.) C:/Users/Jesse.Smith/Documents/covidsms/R/filter_by_lab.R:5:2
+ 27. | \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/distinct_test_date.R:5:2
+ 28. +-dplyr::select(...)
+ 29. +-dplyr::arrange(., .data[[".row_id_tmp_"]])
+ 30. +-coviData::coalesce_dupes(...)
+ 31. | \-`%>%`(...) C:/Users/Jesse.Smith/Documents/coviData/R/utils.R:131:2
+ 32. +-dplyr::add_count(.)
+ 33. +-dplyr::group_by(., ...)
+ 34. +-purrr::when(...)
+ 35. +-dplyr::mutate(., order_id = seq_len(NROW(data)))
+ 36. +-dplyr::arrange(., .data[[".test_dt_tmp_"]], .data[[".lab_order_tmp_"]])
+ 37. +-dplyr::mutate(...)
+ 38. +-covidsms:::distinct_investigation(.)
+ 39. | \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/distinct_investigation.R:5:2
+ 40. +-dplyr::select(...)
+ 41. +-dplyr::arrange(., .data[[".row_id_tmp_"]])
+ 42. +-coviData::coalesce_dupes(., .data[[".inv_id_tmp_"]])
+ 43. | \-`%>%`(...) C:/Users/Jesse.Smith/Documents/coviData/R/utils.R:131:2
+ 44. +-dplyr::add_count(.)
+ 45. +-dplyr::group_by(., ...)
+ 46. +-purrr::when(...)
+ 47. +-dplyr::mutate(., order_id = seq_len(NROW(data)))
+ 48. +-dplyr::arrange(...)
+ 49. +-dplyr::mutate(...)
+ 50. +-dplyr::transmute(...)
+ 51. +-dplyr:::transmute.data.frame(...)
+ 52. | +-dplyr::mutate(.data, ..., .keep = "none")
+ 53. | \-dplyr:::mutate.data.frame(.data, ..., .keep = "none")
+ 54. |   \-dplyr:::mutate_cols(.data, ...)
+ 55. |     +-base::withCallingHandlers(...)
+ 56. |     \-mask$eval_all_mutate(dots[[i]])
+ 57. +-covidsms:::std_state(.data[["patient_state"]])
+ 58. | \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/std_addr.R:36:2
+ 59. +-covidsms::as_chr_ascii(.)
+ 60. +-stringr::str_to_upper(.) C:/Users/Jesse.Smith/Documents/covidsms/R/as_chr_ascii.R:12:2
+ 61. | \-stringi::stri_trans_toupper(string, locale = locale)
+ 62. +-stringr::str_squish(.)
+ 63. | +-stringi::stri_trim_both(str_replace_all(string, "\\s+", " "))
+ 64. | \-stringr::str_replace_all(string, "\\s+", " ")
+ 65. |   \-stringi::stri_replace_all_regex(...)
+ 66. +-dplyr::pull(., 1L)
+ 67. +-dplyr::transmute(., s = dplyr::coalesce(.data[["state"]], .data[["fips"]]))
+ 68. +-dplyr::left_join(., states, by = "fips")
+ 69. +-dplyr:::left_join.data.frame(., states, by = "fips")
+ 70. | \-dplyr::auto_copy(x, y, copy = copy)
+ 71. |   +-dplyr::same_src(x, y)
+ 72. |   \-dplyr:::same_src.data.frame(x, y)
+ 73. |     \-base::is.data.frame(y)
+ 74. \-base::.handleSimpleError(...)
+ 75.   \-dplyr:::h(simpleError(msg, call))
+Error: 'upload_positive' is not an exported object from 'namespace:covidsms'
+Error: 'upload_positive' is not an exported object from 'namespace:covidsms'
+Error: 'upload_positive' is not an exported object from 'namespace:covidsms'
+Error: 'upload_positive' is not an exported object from 'namespace:covidsms'
+Error: 'upload_positive' is not an exported object from 'namespace:covidsms'
+Error: Problem with `filter()` input `..1`.
+x Column `duplicate` not found in `.data`
+i Input `..1` is `!.data[["duplicate"]]`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::translate_acns_upload(prepped_data)
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/translate_acns_upload.R:9:2
+  9. +-janitor::clean_names(., case = "screaming_snake")
+ 10. +-dplyr::select(., -where(is.logical))
+ 11. +-dplyr::mutate(...)
+ 12. +-dplyr::filter(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 13. +-dplyr:::filter.data.frame(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 14. | \-dplyr:::filter_rows(.data, ...)
+ 15. |   +-base::withCallingHandlers(...)
+ 16. |   \-mask$eval_all_filter(dots, env_filter)
+ 17. +-duplicate
+ 18. +-rlang:::`[[.rlang_data_pronoun`(.data, "duplicate")
+ 19. | \-rlang:::data_pronoun_get(x, i)
+ 20. +-rlang:::abort_data_pronoun(x)
+ 21. | \-rlang::abort(msg, "rlang_error_data_pronoun_not_found")
+ 22. |   \-rlang:::signal_abort(cnd)
+ 23. |     \-base::signalCondition(cnd)
+ 24. \-(function (e) ...
+Error during wrapup: Timeout was reached: [smtp.gmail.com:587] Operation timed out after 10000 milliseconds with 0 out of 0 bytes received
+Error: no more error handlers available (recursive errors?); invoking 'abort' restart
+
+2021-02-08 02:00:01
+Error: Problem with `filter()` input `..1`.
+x Column `duplicate` not found in `.data`
+i Input `..1` is `!.data[["duplicate"]]`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::translate_acns_upload(prepped_data)
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/translate_acns_upload.R:9:2
+  9. +-janitor::clean_names(., case = "screaming_snake")
+ 10. +-dplyr::select(., -where(is.logical))
+ 11. +-dplyr::mutate(...)
+ 12. +-dplyr::filter(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 13. +-dplyr:::filter.data.frame(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 14. | \-dplyr:::filter_rows(.data, ...)
+ 15. |   +-base::withCallingHandlers(...)
+ 16. |   \-mask$eval_all_filter(dots, env_filter)
+ 17. +-duplicate
+ 18. +-rlang:::`[[.rlang_data_pronoun`(.data, "duplicate")
+ 19. | \-rlang:::data_pronoun_get(x, i)
+ 20. +-rlang:::abort_data_pronoun(x)
+ 21. | \-rlang::abort(msg, "rlang_error_data_pronoun_not_found")
+ 22. |   \-rlang:::signal_abort(cnd)
+ 23. |     \-base::signalCondition(cnd)
+ 24. \-(function (e) ...
+Registered S3 methods overwritten by 'readr':
+  method           from 
+  format.col_spec  vroom
+  print.col_spec   vroom
+  print.collector  vroom
+  print.date_names vroom
+  print.locale     vroom
+  str.col_spec     vroom
+
+
+2021-02-08 12:38:23
+
+2021-02-09 02:00:02
+Error: Problem with `filter()` input `..1`.
+x Column `duplicate` not found in `.data`
+i Input `..1` is `!.data[["duplicate"]]`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::translate_acns_upload(prepped_data)
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/translate_acns_upload.R:9:2
+  9. +-janitor::clean_names(., case = "screaming_snake")
+ 10. +-dplyr::select(., -where(is.logical))
+ 11. +-dplyr::mutate(...)
+ 12. +-dplyr::filter(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 13. +-dplyr:::filter.data.frame(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 14. | \-dplyr:::filter_rows(.data, ...)
+ 15. |   +-base::withCallingHandlers(...)
+ 16. |   \-mask$eval_all_filter(dots, env_filter)
+ 17. +-duplicate
+ 18. +-rlang:::`[[.rlang_data_pronoun`(.data, "duplicate")
+ 19. | \-rlang:::data_pronoun_get(x, i)
+ 20. +-rlang:::abort_data_pronoun(x)
+ 21. | \-rlang::abort(msg, "rlang_error_data_pronoun_not_found")
+ 22. |   \-rlang:::signal_abort(cnd)
+ 23. |     \-base::signalCondition(cnd)
+ 24. \-(function (e) ...
+Registered S3 methods overwritten by 'readr':
+  method           from 
+  format.col_spec  vroom
+  print.col_spec   vroom
+  print.collector  vroom
+  print.date_names vroom
+  print.locale     vroom
+  str.col_spec     vroom
+
+
+2021-02-10 02:00:01
+Error: Problem with `filter()` input `..1`.
+x Column `duplicate` not found in `.data`
+i Input `..1` is `!.data[["duplicate"]]`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::translate_acns_upload(prepped_data)
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/translate_acns_upload.R:9:2
+  9. +-janitor::clean_names(., case = "screaming_snake")
+ 10. +-dplyr::select(., -where(is.logical))
+ 11. +-dplyr::mutate(...)
+ 12. +-dplyr::filter(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 13. +-dplyr:::filter.data.frame(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 14. | \-dplyr:::filter_rows(.data, ...)
+ 15. |   +-base::withCallingHandlers(...)
+ 16. |   \-mask$eval_all_filter(dots, env_filter)
+ 17. +-duplicate
+ 18. +-rlang:::`[[.rlang_data_pronoun`(.data, "duplicate")
+ 19. | \-rlang:::data_pronoun_get(x, i)
+ 20. +-rlang:::abort_data_pronoun(x)
+ 21. | \-rlang::abort(msg, "rlang_error_data_pronoun_not_found")
+ 22. |   \-rlang:::signal_abort(cnd)
+ 23. |     \-base::signalCondition(cnd)
+ 24. \-(function (e) ...
+Registered S3 methods overwritten by 'readr':
+  method           from 
+  format.col_spec  vroom
+  print.col_spec   vroom
+  print.collector  vroom
+  print.date_names vroom
+  print.locale     vroom
+  str.col_spec     vroom
+
+
+2021-02-11 02:00:01
+Error: Problem with `filter()` input `..1`.
+x Column `duplicate` not found in `.data`
+i Input `..1` is `!.data[["duplicate"]]`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::translate_acns_upload(prepped_data)
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/translate_acns_upload.R:9:2
+  9. +-janitor::clean_names(., case = "screaming_snake")
+ 10. +-dplyr::select(., -where(is.logical))
+ 11. +-dplyr::mutate(...)
+ 12. +-dplyr::filter(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 13. +-dplyr:::filter.data.frame(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 14. | \-dplyr:::filter_rows(.data, ...)
+ 15. |   +-base::withCallingHandlers(...)
+ 16. |   \-mask$eval_all_filter(dots, env_filter)
+ 17. +-duplicate
+ 18. +-rlang:::`[[.rlang_data_pronoun`(.data, "duplicate")
+ 19. | \-rlang:::data_pronoun_get(x, i)
+ 20. +-rlang:::abort_data_pronoun(x)
+ 21. | \-rlang::abort(msg, "rlang_error_data_pronoun_not_found")
+ 22. |   \-rlang:::signal_abort(cnd)
+ 23. |     \-base::signalCondition(cnd)
+ 24. \-(function (e) ...
+Registered S3 methods overwritten by 'readr':
+  method           from 
+  format.col_spec  vroom
+  print.col_spec   vroom
+  print.collector  vroom
+  print.date_names vroom
+  print.locale     vroom
+  str.col_spec     vroom
+
+
+2021-02-12 02:00:02
+Error: Problem with `filter()` input `..1`.
+x Column `duplicate` not found in `.data`
+i Input `..1` is `!.data[["duplicate"]]`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::translate_acns_upload(prepped_data)
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/translate_acns_upload.R:9:2
+  9. +-janitor::clean_names(., case = "screaming_snake")
+ 10. +-dplyr::select(., -where(is.logical))
+ 11. +-dplyr::mutate(...)
+ 12. +-dplyr::filter(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 13. +-dplyr:::filter.data.frame(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 14. | \-dplyr:::filter_rows(.data, ...)
+ 15. |   +-base::withCallingHandlers(...)
+ 16. |   \-mask$eval_all_filter(dots, env_filter)
+ 17. +-duplicate
+ 18. +-rlang:::`[[.rlang_data_pronoun`(.data, "duplicate")
+ 19. | \-rlang:::data_pronoun_get(x, i)
+ 20. +-rlang:::abort_data_pronoun(x)
+ 21. | \-rlang::abort(msg, "rlang_error_data_pronoun_not_found")
+ 22. |   \-rlang:::signal_abort(cnd)
+ 23. |     \-base::signalCondition(cnd)
+ 24. \-(function (e) ...
+Registered S3 methods overwritten by 'readr':
+  method           from 
+  format.col_spec  vroom
+  print.col_spec   vroom
+  print.collector  vroom
+  print.date_names vroom
+  print.locale     vroom
+  str.col_spec     vroom
+
+
+2021-02-13 02:00:02
+Error: Problem with `filter()` input `..1`.
+x Column `duplicate` not found in `.data`
+i Input `..1` is `!.data[["duplicate"]]`.
+Backtrace:
+     x
+  1. +-utils::capture.output(...)
+  2. | \-utils:::evalVis(expr)
+  3. |   +-base::withVisible(eval(expr, pf))
+  4. |   \-base::eval(expr, pf)
+  5. |     \-base::eval(expr, pf)
+  6. +-global::run_script()
+  7. | \-covidsms::translate_acns_upload(prepped_data)
+  8. |   \-`%>%`(...) C:/Users/Jesse.Smith/Documents/covidsms/R/translate_acns_upload.R:9:2
+  9. +-janitor::clean_names(., case = "screaming_snake")
+ 10. +-dplyr::select(., -where(is.logical))
+ 11. +-dplyr::mutate(...)
+ 12. +-dplyr::filter(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 13. +-dplyr:::filter.data.frame(., !.data[["duplicate"]], !.data[["long_term_care"]])
+ 14. | \-dplyr:::filter_rows(.data, ...)
+ 15. |   +-base::withCallingHandlers(...)
+ 16. |   \-mask$eval_all_filter(dots, env_filter)
+ 17. +-duplicate
+ 18. +-rlang:::`[[.rlang_data_pronoun`(.data, "duplicate")
+ 19. | \-rlang:::data_pronoun_get(x, i)
+ 20. +-rlang:::abort_data_pronoun(x)
+ 21. | \-rlang::abort(msg, "rlang_error_data_pronoun_not_found")
+ 22. |   \-rlang:::signal_abort(cnd)
+ 23. |     \-base::signalCondition(cnd)
+ 24. \-(function (e) ...
+Registered S3 methods overwritten by 'readr':
+  method           from 
+  format.col_spec  vroom
+  print.col_spec   vroom
+  print.collector  vroom
+  print.date_names vroom
+  print.locale     vroom
+  str.col_spec     vroom
+
