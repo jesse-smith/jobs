@@ -29,7 +29,7 @@ prep_nbs_data <- covidsms::prep_acns(
 gc(verbose = FALSE)
 
 coviData::ennotify_context("translating assignment data to REDcap format")
-trans_data <- covidassign::translate_acns(prep_nbs_data, days = 3L)
+trans_data <- covidassign::translate_acns(prep_nbs_data, days = 10L)
 gc(verbose = FALSE)
 
 coviData::ennotify_context("assigning cases")
@@ -47,7 +47,6 @@ gc(verbose = FALSE)
 
 coviData::ennotify_context("uploading assignments")
 upload_data <- covidassign::upload_assignments(prep_data)
-remove(prep_data)
 gc(verbose = FALSE)
 try(covidassign::validate_upload(
   upload_data,
