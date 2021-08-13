@@ -2395,3 +2395,94 @@ Plot exposure social symptomatic
 Warning messages:
 1: Removed 4 rows containing missing values (geom_text). 
 2: Removed 8 rows containing missing values (geom_text). 
+Load packages
+-- Attaching packages ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.3     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   2.0.0     v forcats 0.5.1
+-- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Create functions
+Load NCA/NBS data
+Warning message:
+Problem with `mutate()` column `pm.address`.
+i `pm.address = ifelse(...)`.
+i argument is not an atomic vector; coercing 
+Load NIT data
+Warning messages:
+1: Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+2: Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+3: Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+Plot epicurve
+New names:
+* stable_hisp -> stable_hisp...101
+* supress_hisp -> supress_hisp...102
+* stable_hisp -> stable_hisp...163
+* supress_hisp -> supress_hisp...164
+Plot age
+mutate: changed 299,657 values (33%) of 'patient_first_name' (0 new NA)
+        changed 310,027 values (34%) of 'patient_last_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 855,675 values (95%) of 'patient_street_addr_1' (0 new NA)
+        changed 124,998 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (788,930)
+           > rows only in y  (      0)
+           > matched rows     110,999
+           >                 =========
+           > rows total       110,999
+semi_join: added no columns
+           > rows only in x  (384,546)
+           > rows only in y  (      0)
+           > matched rows     515,383
+           >                 =========
+           > rows total       515,383
+Plot gender
+Plot race
+Plot ethnicity
+Plot student status
+Plot school type
+Plot employment status
+Plot manufacturing highlight
+New names:
+* stable_hisp -> stable_hisp...101
+* supress_hisp -> supress_hisp...102
+* stable_hisp -> stable_hisp...163
+* supress_hisp -> supress_hisp...164
+Plot infectious activity
+Plot infectious activity again
+Plot infectious work
+Plot infectious days worked
+Plot infectious school
+Plot infectious social activity
+Plot exposures
+Plot social exposure
+Plot symptomatic highlight
+Plot infectious social activity symptomatic
+Plot infectious social activity type symptomatic
+Plot exposure type symptomatic
+Plot exposure social symptomatic
+Warning messages:
+1: Removed 4 rows containing missing values (geom_text). 
+2: Removed 8 rows containing missing values (geom_text). 

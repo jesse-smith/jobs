@@ -7351,3 +7351,111 @@ Archiving acns data...
 Sending acns end notification...
 
 Done.
+
+2021-08-10 14:00:03
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 6,961 values (48%) of 'patient_last_name' (0 new NA)
+        changed 6,834 values (47%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 14,338 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 1,875 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (   651)
+           > rows only in y  (97,082)
+           > matched rows     13,917
+           >                 ========
+           > rows total       13,917
+semi_join: added no columns
+           > rows only in x  ( 14,568)
+           > rows only in y  (515,383)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 186,324 rows (93%), 14,520 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 1,260)
+            > rows only in y  ( 2,054)
+            > matched rows     13,260
+            >                 ========
+            > rows total       13,260
+mutate: no changes
+filter: removed 14,631 rows (7%), 186,213 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (186,213)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-11 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 12,386 values (49%) of 'patient_last_name' (0 new NA)
+        changed 12,169 values (48%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 25,181 values (99%) of 'patient_street_addr_1' (0 new NA)
+        changed 3,758 values (15%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,274)
+           > rows only in y  (87,190)
+           > matched rows     24,262
+           >                 ========
+           > rows total       24,262
+semi_join: added no columns
+           > rows only in x  ( 25,536)
+           > rows only in y  (516,026)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 435,299 rows (94%), 25,741 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,059)
+            > rows only in y  ( 3,645)
+            > matched rows     23,682
+            >                 ========
+            > rows total       23,682
+mutate: no changes
+filter: removed 26,105 rows (6%), 434,935 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (434,935)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
