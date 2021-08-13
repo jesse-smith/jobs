@@ -164,18 +164,18 @@ is_updated <- FALSE
 while (!is_updated) {
   is_updated <- try_download_slowly()
 }
-gc()
+gc(verbose = FALSE)
 
 # Outputs ----------------------------------------------------------------------
 # Load data
-inv <- coviData::process_inv(replace = TRUE)
+inv <- coviData::process_inv()
 pcr <- coviData::process_pcr(inv = inv)
-gc()
+gc(verbose = FALSE)
 
 # Create daily report
 coviData::ennotify_context("creating daily report")
 covidReport::rpt_daily_pptx(inv = inv, pcr = pcr)
-gc()
+gc(verbose = FALSE)
 
 # Create Google Sheets output
 coviData::ennotify_context("creating google sheets timeseries")
@@ -188,11 +188,9 @@ coviData::write_file_delim(
 )
 
 # Create demographic report
-if (weekdays(lubridate::today()) == "Tuesday") {
-  coviData::ennotify_context("creating demographic report")
-  covidReport::rpt_demog_pptx(inv = coviData::pos(inv))
-  gc()
-}
+coviData::ennotify_context("creating demographic report")
+covidReport::rpt_demog_pptx(inv = coviData::pos(inv))
+gc(verbose = FALSE)
 
 # Send status update email
 coviData::ennotify_context("sending daily email")
@@ -204,16 +202,59 @@ covidReport::rpt_daily_mail(to = to, inv = inv, pcr = pcr)
 
 # Remove unneeded data
 pos_inv <- coviData::pos(inv)
-remove(inv, pcr)
-gc()
+remove(inv)
+gc(verbose = FALSE)
 
-# Switch to report errors to Jesse only (except Thursdays)
+# Switch to report errors to Allison & Jesse only (except Thursdays)
 if (weekdays(lubridate::today()) != "Thursday") {
   coviData::ennotify_to(
     "Jesse.Smith@shelbycountytn.gov",
     "Allison.Plaxco@shelbycountytn.gov"
   )
 }
+
+# Maps first so I can remove `pcr`
+
+# Testing rate map
+test_map <- covidReport::test_map_rate(pcr)
+gc(verbose = FALSE)
+path_test_map <- coviData::path_create(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "jtf_figs/test_map/", paste0("test_map_", coviData::date_inv()),
+  ext = "png"
+)
+coviData::save_plot(test_map, path = path_test_map, ratio = c(12,9), size = 1.125)
+remove(pcr)
+gc(verbose = FALSE)
+
+# Active case rate map
+active_map <- covidReport::active_map_rate(pos_inv)
+path_active_map <- coviData::path_create(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "jtf_figs/active_case_map/", paste0("active_case_map_", coviData::date_inv()),
+  ext = "png"
+)
+coviData::save_plot(active_map, path = path_active_map, ratio = c(12,9), size = 1.125)
+
+# Save map output for Google Sheets
+
+active_map[["data"]] %>%
+  tidyr::drop_na(.data[["zip"]]) %>%
+  tidyr::replace_na(list(n = 0L)) %>%
+  dplyr::select("zip", "n") %>%
+  dplyr::left_join(
+    test_map[["data"]],
+    by = "zip",
+    suffix = c("_active", "_test")
+  ) %>%
+  dplyr::select("zip", "n_active", "n_test") %>%
+  coviData::write_file_delim(
+      "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips.csv"
+  )
+
+tibble::tibble(
+  active = tidyr::drop_na(active_map[["data"]])[["n"]]
+)
 
 # Save report dates
 coviData::ennotify_context("archiving report date")
@@ -223,11 +264,11 @@ coalesced <- coviData::coalesce_report_date()
 coviData::ennotify_context("adding collection date to report date")
 collection_date <- coviData::add_collection_date(coalesced)
 remove(coalesced)
-gc()
+gc(verbose = FALSE)
 coviData::ennotify_context("saving report date linelist")
 coviData::save_report_date(collection_date)
 remove(collection_date)
-gc()
+gc(verbose = FALSE)
 
 # Create Rt figure
 coviData::ennotify_context("modeling Rt")
@@ -240,7 +281,7 @@ rt_data <- dplyr::semi_join(
 rt <- covidModel::estimate_rt(rt_data)
 rough_rt <- covidModel::estimate_rt(rt_data, trend = 1L, boost = FALSE)
 remove(rt_data)
-gc()
+gc(verbose = FALSE)
 rt_plot <- covidModel::plot_rt(rt, .rough_rt = rough_rt)
 rt_path <- coviData::path_create(
   "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/jtf_figs/rt_fig",

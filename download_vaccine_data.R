@@ -155,7 +155,7 @@ v_map_pct_path <- coviData::path_create(
 )
 p_map_pct <- covidReport::vac_map_pct(v_data)
 if (rlang::is_interactive()) show(p_map_pct)
-covidReport::save_plot(p_map_pct, path = v_map_pct_path, width = 12, height = 9)
+coviData::save_plot(p_map_pct, path = v_map_pct_path, ratio = c(12, 9), size = 1.125)
 
 # Email Vaccination Numbers
 coviData::ennotify_context("summarizing and sending vaccination numbers")
