@@ -33829,7 +33829,7 @@ Warning messages:
 1: Removed 5 rows containing missing values (geom_point). 
 2: Removed 5 row(s) containing missing values (geom_path). 
 
-2021-08-10 11:00:03
+2021-08-12 12:59:55
 Setting `ennotify_inform = true`...
 Setting `ennotify()` as error handler...
 Setting `rlang_backtrace_on_error = 'full'`...
@@ -33848,7 +33848,7 @@ Downloading nbs data...
 Downloading antigen data...
 Starting antigen snapshot download...
 
-Data available for 2021-08-10
+Data available for 2021-08-12
 Downloading REDcap file...
 
 Done.
@@ -33859,7 +33859,7 @@ Finished antigen snapshot download.
 Downloading serology data...
 Starting serology snapshot download...
 
-Data available for 2021-08-10
+Data available for 2021-08-12
 Downloading REDcap file...
 
 Done.
@@ -33870,7 +33870,7 @@ Finished serology snapshot download.
 Downloading investigation data...
 Starting NBS snapshot download...
 
-Data available for 2021-08-10
+Data available for 2021-08-12
 Downloading REDcap file...
 
 Done.
@@ -33884,7 +33884,7 @@ Done.
 Downloading pcr data...
 Starting PCR snapshot download...
 
-Data available for 2021-08-10
+Data available for 2021-08-12
 Downloading REDcap file...
 
 Done.
@@ -33893,207 +33893,42 @@ Moving file and cleaning up; this may take a while...Done.
 
 Finished PCR snapshot download.
 
-filter: removed 74,674 rows (8%), 827,310 rows remaining
-filter: removed 55,814 rows (7%), 771,496 rows remaining
-mutate: changed 233,706 values (30%) of 'patient_first_name' (0 new NA)
-        changed 242,885 values (31%) of 'patient_last_name' (0 new NA)
+filter: removed 75,314 rows (8%), 832,970 rows remaining
+filter: removed 56,494 rows (7%), 776,476 rows remaining
+mutate: changed 236,483 values (30%) of 'patient_first_name' (0 new NA)
+        changed 245,703 values (32%) of 'patient_last_name' (0 new NA)
         converted 'patient_dob' from character to Date (0 new NA)
-        changed 731,683 values (95%) of 'patient_street_addr_1' (0 new NA)
-        changed 99,154 values (13%) of 'patient_zip' (0 new NA)
+        changed 736,421 values (95%) of 'patient_street_addr_1' (0 new NA)
+        changed 99,870 values (13%) of 'patient_zip' (0 new NA)
         converted 'specimen_coll_dt' from character to Date (0 new NA)
 rename: renamed one variable (patient_street_addr)
 distinct: no rows removed
-distinct: removed 461 rows (<1%), 111,452 rows remaining
-distinct: removed 115,018 rows (17%), 544,565 rows remaining
-distinct: removed 28,539 rows (5%), 516,026 rows remaining
-filter: removed 1,483,033 rows (92%), 130,227 rows remaining
+distinct: removed one row (<1%), 113,152 rows remaining
+distinct: removed 468 rows (<1%), 112,684 rows remaining
+distinct: removed 116,493 rows (18%), 546,830 rows remaining
+distinct: removed 28,600 rows (5%), 518,230 rows remaining
+filter: removed 1,490,799 rows (92%), 131,556 rows remaining
 inner_join: added 308 columns (public_health_case_uid, condition_cd, notification_submit_dt, notification_sent_dt, notification_local_id, ...)
-            > rows only in x  (  6,221)
-            > rows only in y  (  9,768)
-            > matched rows     124,006
+            > rows only in x  (  6,305)
+            > rows only in y  (  9,948)
+            > matched rows     125,251
             >                 =========
-            > rows total       124,006
+            > rows total       125,251
 mutate: changed 9 values (<1%) of 'specimen_coll_dt' (9 fewer NA)
-filter: removed 133,809 rows (8%), 1,479,451 rows remaining
+filter: removed 135,147 rows (8%), 1,487,208 rows remaining
 inner_join: added 308 columns (public_health_case_uid, condition_cd, notification_submit_dt, notification_sent_dt, notification_local_id, ...)
-            > rows only in x  (  277,113)
-            > rows only in y  (    6,456)
-            > matched rows     1,202,338
+            > rows only in x  (  279,499)
+            > rows only in y  (    6,440)
+            > matched rows     1,207,709
             >                 ===========
-            > rows total       1,202,338
+            > rows total       1,207,709
 mutate: changed 5 values (<1%) of 'specimen_coll_dt' (5 fewer NA)
 Creating daily report...
 Removing logically inconsistent or missing observations
-filter: removed 1,534 rows (1%), 109,918 rows remaining
+filter: removed 1,765 rows (2%), 110,919 rows remaining
 Removing collection dates earlier than 2020-04-12
-filter: removed 1,437 rows (1%), 108,481 rows remaining
-Downloading: 990 B     Downloading: 990 B     Downloading: 12 kB     Downloading: 12 kB     Downloading: 45 kB     Downloading: 45 kB     Downloading: 46 kB     Downloading: 46 kB     Downloading: 50 kB     Downloading: 50 kB     Downloading: 53 kB     Downloading: 53 kB     Downloading: 56 kB     Downloading: 56 kB     Downloading: 57 kB     Downloading: 57 kB     Downloading: 60 kB     Downloading: 60 kB     Downloading: 63 kB     Downloading: 63 kB     Downloading: 65 kB     Downloading: 65 kB     Downloading: 67 kB     Downloading: 67 kB     Downloading: 71 kB     Downloading: 71 kB     Downloading: 72 kB     Downloading: 72 kB     Downloading: 75 kB     Downloading: 75 kB     Downloading: 78 kB     Downloading: 78 kB     Downloading: 80 kB     Downloading: 80 kB     Downloading: 83 kB     Downloading: 83 kB     Downloading: 86 kB     Downloading: 86 kB     Downloading: 89 kB     Downloading: 89 kB     Downloading: 91 kB     Downloading: 91 kB     Downloading: 94 kB     Downloading: 94 kB     Downloading: 95 kB     Downloading: 95 kB     Downloading: 98 kB     Downloading: 98 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Warning message:
-Removed 10 row(s) containing missing values (geom_path). 
-Creating google sheets timeseries...
-Creating demographic report...
-Sending daily email...
-
-Archiving report date...
-Getting file info...
-Checking archive for existing data...
-Archiving new data...
-Done.
-Coalescing report date...
-Reading archived data...
-Coalescing report dates...
-Done.
-Adding collection date to report date...
-Reading `.from_file`...
-Joining by `.id_col`...
-inner_join: added one column (collection_date)
-            > rows only in x  (      0)
-            > rows only in y  (      0)
-            > matched rows     901,984
-            >                 =========
-            > rows total       901,984
-Done.
-Saving report date linelist...
-`.data` saved to V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/Report Date Linelist/report_date_linelist.fst
-Modeling rt...
-Removing collection dates earlier than 2020-03-12
-filter: removed 1,039 rows (1%), 110,413 rows remaining
-Removing logically inconsistent or missing observations
-filter: removed 53 rows (<1%), 110,360 rows remaining
-Removing collection dates with incomplete data
-filter: removed 741 rows (1%), 109,619 rows remaining
-Last complete collection date is  2021-08-06 
-
-Correcting anomalies...
-Creating reference data...
-frequency = 7 days
-trend = 30 days
-Calculating decomposition error...
-Calculating Rt error...
-Boosting uncertainty estimates...
-There were 50 or more warnings (use warnings() to see the first 50)
-Removing collection dates earlier than 2020-03-12
-filter: removed 1,039 rows (1%), 110,413 rows remaining
-Removing logically inconsistent or missing observations
-filter: removed 53 rows (<1%), 110,360 rows remaining
-Removing collection dates with incomplete data
-filter: removed 741 rows (1%), 109,619 rows remaining
-Last complete collection date is  2021-08-06 
-
-Correcting anomalies...
-Decomposing cleaned observations...
-frequency = 7 days
-trend = 1 days
-Warning messages:
-1: `type_convert()` only converts columns of type 'character'.
-- `df` has no columns of type 'character' 
-2: `type_convert()` only converts columns of type 'character'.
-- `df` has no columns of type 'character' 
-3: In estimate_R_func(incid = incid, method = method, si_sample = si_sample,  :
-  You're estimating R too early in the epidemic to get the desired
-            posterior CV.
-Warning messages:
-1: Removed 5 rows containing missing values (geom_point). 
-2: Removed 5 row(s) containing missing values (geom_path). 
-
-2021-08-11 11:00:02
-Setting `ennotify_inform = true`...
-Setting `ennotify()` as error handler...
-Setting `rlang_backtrace_on_error = 'full'`...
-Setting `ennotify_to` to: chaitra.subramanya@shelbycountytn.gov...
-* Setting `ennotify_to` to: allison.plaxco@shelbycountytn.gov...
-* Setting `ennotify_to` to: jesse.smith@shelbycountytn.gov...
-* Setting `ennotify_to` to: liang.li@shelbycountytn.gov...
-Importing magrittr pipe...
-Creating nbs download notification functions...
-Creating nbs download wrapper functions...
-Creating nbs download iteration function...
-Determining when to stop looking for files...
-Create slow download function...
-Downloading nbs data...
-
-Downloading antigen data...
-Starting antigen snapshot download...
-
-Data available for 2021-08-11
-Downloading REDcap file...
-
-Done.
-Unzipping folder...Done.
-Moving file and cleaning up; this may take a while...Done.
-
-Finished antigen snapshot download.
-Downloading serology data...
-Starting serology snapshot download...
-
-Data available for 2021-08-11
-Downloading REDcap file...
-
-Done.
-Unzipping folder...Done.
-Moving file and cleaning up; this may take a while...Done.
-
-Finished serology snapshot download.
-Downloading investigation data...
-Starting NBS snapshot download...
-
-Data available for 2021-08-11
-Downloading REDcap file...
-
-Done.
-Unzipping folder...Done.
-Moving file and cleaning up; this may take a while...Done.
-
-Finished NBS snapshot download.
-Converting to xlsx...
-
-Done.
-Downloading pcr data...
-Starting PCR snapshot download...
-
-Data available for 2021-08-11
-Downloading REDcap file...
-
-Done.
-Unzipping folder...Done.
-Moving file and cleaning up; this may take a while...Done.
-
-Finished PCR snapshot download.
-
-filter: removed 75,002 rows (8%), 829,959 rows remaining
-filter: removed 56,256 rows (7%), 773,703 rows remaining
-mutate: changed 234,931 values (30%) of 'patient_first_name' (0 new NA)
-        changed 244,123 values (32%) of 'patient_last_name' (0 new NA)
-        converted 'patient_dob' from character to Date (0 new NA)
-        changed 733,803 values (95%) of 'patient_street_addr_1' (0 new NA)
-        changed 99,440 values (13%) of 'patient_zip' (0 new NA)
-        converted 'specimen_coll_dt' from character to Date (0 new NA)
-rename: renamed one variable (patient_street_addr)
-distinct: no rows removed
-distinct: removed 463 rows (<1%), 112,026 rows remaining
-distinct: removed 115,646 rows (17%), 545,568 rows remaining
-distinct: removed 28,567 rows (5%), 517,001 rows remaining
-filter: removed 1,486,255 rows (92%), 130,857 rows remaining
-inner_join: added 308 columns (public_health_case_uid, condition_cd, notification_submit_dt, notification_sent_dt, notification_local_id, ...)
-            > rows only in x  (  6,276)
-            > rows only in y  (  9,866)
-            > matched rows     124,581
-            >                 =========
-            > rows total       124,581
-mutate: changed 9 values (<1%) of 'specimen_coll_dt' (9 fewer NA)
-filter: removed 134,443 rows (8%), 1,482,669 rows remaining
-inner_join: added 308 columns (public_health_case_uid, condition_cd, notification_submit_dt, notification_sent_dt, notification_local_id, ...)
-            > rows only in x  (  278,188)
-            > rows only in y  (    6,448)
-            > matched rows     1,204,481
-            >                 ===========
-            > rows total       1,204,481
-mutate: changed 5 values (<1%) of 'specimen_coll_dt' (5 fewer NA)
-Creating daily report...
-Removing logically inconsistent or missing observations
-filter: removed 1,671 rows (1%), 110,355 rows remaining
-Removing collection dates earlier than 2020-04-12
-filter: removed 1,437 rows (1%), 108,918 rows remaining
-Downloading: 940 B     Downloading: 940 B     Downloading: 7.8 kB     Downloading: 7.8 kB     Downloading: 11 kB     Downloading: 11 kB     Downloading: 13 kB     Downloading: 13 kB     Downloading: 15 kB     Downloading: 15 kB     Downloading: 16 kB     Downloading: 16 kB     Downloading: 19 kB     Downloading: 19 kB     Downloading: 20 kB     Downloading: 20 kB     Downloading: 23 kB     Downloading: 23 kB     Downloading: 26 kB     Downloading: 26 kB     Downloading: 28 kB     Downloading: 28 kB     Downloading: 30 kB     Downloading: 30 kB     Downloading: 32 kB     Downloading: 32 kB     Downloading: 35 kB     Downloading: 35 kB     Downloading: 39 kB     Downloading: 39 kB     Downloading: 41 kB     Downloading: 41 kB     Downloading: 43 kB     Downloading: 43 kB     Downloading: 45 kB     Downloading: 45 kB     Downloading: 46 kB     Downloading: 46 kB     Downloading: 47 kB     Downloading: 47 kB     Downloading: 52 kB     Downloading: 52 kB     Downloading: 54 kB     Downloading: 54 kB     Downloading: 57 kB     Downloading: 57 kB     Downloading: 61 kB     Downloading: 61 kB     Downloading: 64 kB     Downloading: 64 kB     Downloading: 67 kB     Downloading: 67 kB     Downloading: 69 kB     Downloading: 69 kB     Downloading: 72 kB     Downloading: 72 kB     Downloading: 73 kB     Downloading: 73 kB     Downloading: 76 kB     Downloading: 76 kB     Downloading: 79 kB     Downloading: 79 kB     Downloading: 83 kB     Downloading: 83 kB     Downloading: 84 kB     Downloading: 84 kB     Downloading: 87 kB     Downloading: 87 kB     Downloading: 90 kB     Downloading: 90 kB     Downloading: 93 kB     Downloading: 93 kB     Downloading: 94 kB     Downloading: 94 kB     Downloading: 95 kB     Downloading: 95 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Warning message:
+filter: removed 1,437 rows (1%), 109,482 rows remaining
+Downloading: 11 kB     Downloading: 11 kB     Downloading: 13 kB     Downloading: 13 kB     Downloading: 15 kB     Downloading: 15 kB     Downloading: 22 kB     Downloading: 22 kB     Downloading: 35 kB     Downloading: 35 kB     Downloading: 41 kB     Downloading: 41 kB     Downloading: 45 kB     Downloading: 45 kB     Downloading: 50 kB     Downloading: 50 kB     Downloading: 58 kB     Downloading: 58 kB     Downloading: 64 kB     Downloading: 64 kB     Downloading: 69 kB     Downloading: 69 kB     Downloading: 75 kB     Downloading: 75 kB     Downloading: 82 kB     Downloading: 82 kB     Downloading: 86 kB     Downloading: 86 kB     Downloading: 91 kB     Downloading: 91 kB     Downloading: 97 kB     Downloading: 97 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 130 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 140 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 150 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 160 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 170 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 180 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 190 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 200 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 210 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 220 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 230 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 240 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 250 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 260 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 270 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 280 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 290 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 300 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 310 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 320 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 330 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 340 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 350 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 360 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 370 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 380 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 390 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 400 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 410 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 420 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 430 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 440 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 450 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 460 kB     Downloading: 470 kB     Downloading: 470 kB     Downloading: 470 kB     Downloading: 470 kB     Downloading: 470 kB     Downloading: 470 kB     Warning message:
 Removed 10 row(s) containing missing values (geom_path). 
 Creating google sheets timeseries...
 Sending daily email...
@@ -34113,20 +33948,20 @@ Joining by `.id_col`...
 inner_join: added one column (collection_date)
             > rows only in x  (      0)
             > rows only in y  (      0)
-            > matched rows     904,961
+            > matched rows     908,284
             >                 =========
-            > rows total       904,961
+            > rows total       908,284
 Done.
 Saving report date linelist...
 `.data` saved to V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/Report Date Linelist/report_date_linelist.fst
 Modeling rt...
 Removing collection dates earlier than 2020-03-12
-filter: removed 1,046 rows (1%), 110,980 rows remaining
+filter: removed 1,054 rows (1%), 111,630 rows remaining
 Removing logically inconsistent or missing observations
-filter: removed 54 rows (<1%), 110,926 rows remaining
+filter: removed 54 rows (<1%), 111,576 rows remaining
 Removing collection dates with incomplete data
-filter: removed 877 rows (1%), 110,049 rows remaining
-Last complete collection date is  2021-08-07 
+filter: removed 1,124 rows (1%), 110,452 rows remaining
+Last complete collection date is  2021-08-08 
 
 Correcting anomalies...
 Creating reference data...
@@ -34137,12 +33972,12 @@ Calculating Rt error...
 Boosting uncertainty estimates...
 There were 50 or more warnings (use warnings() to see the first 50)
 Removing collection dates earlier than 2020-03-12
-filter: removed 1,046 rows (1%), 110,980 rows remaining
+filter: removed 1,054 rows (1%), 111,630 rows remaining
 Removing logically inconsistent or missing observations
-filter: removed 54 rows (<1%), 110,926 rows remaining
+filter: removed 54 rows (<1%), 111,576 rows remaining
 Removing collection dates with incomplete data
-filter: removed 877 rows (1%), 110,049 rows remaining
-Last complete collection date is  2021-08-07 
+filter: removed 1,124 rows (1%), 110,452 rows remaining
+Last complete collection date is  2021-08-08 
 
 Correcting anomalies...
 Decomposing cleaned observations...
@@ -34159,19 +33994,7 @@ Warning messages:
 Warning messages:
 1: Removed 5 rows containing missing values (geom_point). 
 2: Removed 5 row(s) containing missing values (geom_path). 
+Creating rt table...
+Error: The `webshot` package is required for saving images of gt tables.
 
-2021-08-12 11:00:03
-Setting `ennotify_inform = true`...
-Setting `ennotify()` as error handler...
-Setting `rlang_backtrace_on_error = 'full'`...
-Setting `ennotify_to` to: chaitra.subramanya@shelbycountytn.gov...
-* Setting `ennotify_to` to: allison.plaxco@shelbycountytn.gov...
-* Setting `ennotify_to` to: jesse.smith@shelbycountytn.gov...
-* Setting `ennotify_to` to: liang.li@shelbycountytn.gov...
-Importing magrittr pipe...
-Creating nbs download notification functions...
-Creating nbs download wrapper functions...
-Creating nbs download iteration function...
-Determining when to stop looking for files...
-Create slow download function...
-Downloading nbs data...
+Execution halted

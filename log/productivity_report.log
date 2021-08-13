@@ -1792,7 +1792,7 @@ Splitting productivity data into sheets...
 Creating productivity workbook...
 Saving productivity workbook...
 
-2021-08-10 06:00:03
+2021-08-12 18:39:43
 
 Setting `ennotify_inform = true`...
 Setting `ennotify()` as error handler...
@@ -1806,34 +1806,3 @@ Summarizing data for productivity report...
 Splitting productivity data into sheets...
 Creating productivity workbook...
 Saving productivity workbook...
-
-2021-08-11 06:00:02
-
-Setting `ennotify_inform = true`...
-Setting `ennotify()` as error handler...
-Setting `rlang_backtrace_on_error = 'full'`...
-Setting `ennotify_to` to: jesse.smith@shelbycountytn.gov...
-* Setting `ennotify_to` to: allison.plaxco@shelbycountytn.gov...
-Importing functions for productivity report...
-Creating functions for productivity report...
-Downloading data for productivity report...
-Summarizing data for productivity report...
-Splitting productivity data into sheets...
-Creating productivity workbook...
-Saving productivity workbook...
-
-2021-08-12 06:00:02
-
-Setting `ennotify_inform = true`...
-Setting `ennotify()` as error handler...
-Setting `rlang_backtrace_on_error = 'full'`...
-Setting `ennotify_to` to: jesse.smith@shelbycountytn.gov...
-* Setting `ennotify_to` to: allison.plaxco@shelbycountytn.gov...
-Importing functions for productivity report...
-Creating functions for productivity report...
-Downloading data for productivity report...
-Summarizing data for productivity report...
-Splitting productivity data into sheets...
-Creating productivity workbook...
-Saving productivity workbook...
-Downloading: 940 B     Downloading: 940 B     Downloading: 2.3 kB     Downloading: 2.3 kB     Downloading: 13 kB     Downloading: 13 kB     Downloading: 15 kB     Downloading: 15 kB     Downloading: 17 kB     Downloading: 17 kB     Downloading: 21 kB     Downloading: 21 kB     Downloading: 32 kB     Downloading: 32 kB     Downloading: 35 kB     Downloading: 35 kB     Downloading: 37 kB     Downloading: 37 kB     Downloading: 41 kB     Downloading: 41 kB     Downloading: 42 kB     Downloading: 42 kB     Downloading: 46 kB     Downloading: 46 kB     Downloading: 47 kB     Downloading: 47 kB     Downloading: 52 kB     Downloading: 52 kB     Downloading: 58 kB     Downloading: 58 kB     Downloading: 67 kB     Downloading: 67 kB     Downloading: 79 kB     Downloading: 79 kB     Downloading: 83 kB     Downloading: 83 kB     Downloading: 88 kB     Downloading: 88 kB     Downloading: 94 kB     Downloading: 94 kB     Downloading: 99 kB     Downloading: 99 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 980 B     Downloading: 980 B     Downloading: 6.5 kB     Downloading: 6.5 kB     Downloading: 9.2 kB     Downloading: 9.2 kB     Downloading: 13 kB     Downloading: 13 kB     Downloading: 15 kB     Downloading: 15 kB     Downloading: 19 kB     Downloading: 19 kB     Downloading: 20 kB     Downloading: 20 kB     Downloading: 24 kB     Downloading: 24 kB     Downloading: 30 kB     Downloading: 30 kB     Downloading: 32 kB     Downloading: 32 kB     Downloading: 37 kB     Downloading: 37 kB     Downloading: 38 kB     Downloading: 38 kB     Downloading: 42 kB     Downloading: 42 kB     Downloading: 45 kB     Downloading: 45 kB     Downloading: 47 kB     Downloading: 47 kB     Downloading: 50 kB     Downloading: 50 kB     Downloading: 53 kB     Downloading: 53 kB     Downloading: 56 kB     Downloading: 56 kB     Downloading: 58 kB     Downloading: 58 kB     Downloading: 61 kB     Downloading: 61 kB     Downloading: 64 kB     Downloading: 64 kB     Downloading: 67 kB     Downloading: 67 kB     Downloading: 71 kB     Downloading: 71 kB     Downloading: 73 kB     Downloading: 73 kB     Downloading: 76 kB     Downloading: 76 kB     Downloading: 79 kB     Downloading: 79 kB     Downloading: 82 kB     Downloading: 82 kB     Downloading: 84 kB     Downloading: 84 kB     Downloading: 86 kB     Downloading: 86 kB     Downloading: 87 kB     Downloading: 87 kB     Downloading: 89 kB     Downloading: 89 kB     Downloading: 90 kB     Downloading: 90 kB     Downloading: 93 kB     Downloading: 93 kB     Downloading: 100 kB     Downloading: 100 kB     Downloading: 110 kB     Downloading: 110 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     Downloading: 120 kB     

@@ -702,26 +702,6 @@ v readr   2.0.0     v forcats 0.5.1
 -- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
 x dplyr::filter() masks stats::filter()
 x dplyr::lag()    masks stats::lag()
-
-Attaching package: 'magrittr'
-
-The following object is masked from 'package:purrr':
-
-    set_names
-
-The following object is masked from 'package:tidyr':
-
-    extract
-
-Warning message:
-Problem with `mutate()` input `..1`.
-i `..1 = dplyr::across(...)`.
-i All formats failed to parse. No formats found. 
-Plot manufacturing highlight
-New names:
-* stable_hisp -> stable_hisp...101
-* supress_hisp -> supress_hisp...102
-* stable_hisp -> stable_hisp...163
-* supress_hisp -> supress_hisp...164
-Warning message:
-Removed 6 rows containing missing values (geom_text). 
+Error in library(covidCluster) : 
+  there is no package called 'covidCluster'
+Execution halted
