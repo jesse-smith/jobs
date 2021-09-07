@@ -705,3 +705,108 @@ x dplyr::lag()    masks stats::lag()
 Error in library(covidCluster) : 
   there is no package called 'covidCluster'
 Execution halted
+-- Attaching packages ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.3     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   2.0.0     v forcats 0.5.1
+-- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Warning message:
+Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+Plot manufacturing highlight
+New names:
+* stable_hisp -> stable_hisp...40
+* supress_hisp -> supress_hisp...41
+* stable_hisp -> stable_hisp...102
+* supress_hisp -> supress_hisp...103
+Warning message:
+Removed 7 rows containing missing values (geom_text). 
+-- Attaching packages ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.3     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   2.0.0     v forcats 0.5.1
+-- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+|--------------------------------------------------|
+|==================================================|
+Warning message:
+Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+Plot manufacturing highlight
+Warning message:
+Problem with `mutate()` column `age`.
+i `age = `%>%`(...)`.
+i Unknown levels in `f`: 65-75, 75-85 
+New names:
+* stable_hisp -> stable_hisp...40
+* supress_hisp -> supress_hisp...41
+* stable_hisp -> stable_hisp...102
+* supress_hisp -> supress_hisp...103
+Warning message:
+Removed 6 rows containing missing values (geom_text). 
+-- Attaching packages ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.3     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   2.0.0     v forcats 0.5.1
+-- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+|--------------------------------------------------|
+|==================================================|
+Warning message:
+Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+Plot manufacturing highlight
+Warning message:
+Problem with `mutate()` column `age`.
+i `age = `%>%`(...)`.
+i Unknown levels in `f`: 65-75, 75-85 
+New names:
+* stable_hisp -> stable_hisp...40
+* supress_hisp -> supress_hisp...41
+* stable_hisp -> stable_hisp...102
+* supress_hisp -> supress_hisp...103
+Warning message:
+Removed 7 rows containing missing values (geom_text). 

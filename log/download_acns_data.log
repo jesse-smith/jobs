@@ -7459,3 +7459,1654 @@ Archiving acns data...
 Sending acns end notification...
 
 Done.
+
+2021-08-13 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 12,934 values (49%) of 'patient_last_name' (0 new NA)
+        changed 12,715 values (48%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 26,122 values (99%) of 'patient_street_addr_1' (0 new NA)
+        changed 3,844 values (15%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,332)
+           > rows only in y  (87,506)
+           > matched rows     25,178
+           >                 ========
+           > rows total       25,178
+semi_join: added no columns
+           > rows only in x  ( 26,510)
+           > rows only in y  (518,230)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 436,647 rows (94%), 26,723 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,124)
+            > rows only in y  ( 3,766)
+            > matched rows     24,599
+            >                 ========
+            > rows total       24,599
+mutate: no changes
+filter: removed 27,084 rows (6%), 436,286 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (436,286)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-14 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 13,337 values (49%) of 'patient_last_name' (0 new NA)
+        changed 13,110 values (48%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 26,886 values (99%) of 'patient_street_addr_1' (0 new NA)
+        changed 3,984 values (15%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,390)
+           > rows only in y  (87,616)
+           > matched rows     25,898
+           >                 ========
+           > rows total       25,898
+semi_join: added no columns
+           > rows only in x  ( 27,288)
+           > rows only in y  (519,835)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 439,951 rows (94%), 27,544 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,183)
+            > rows only in y  ( 3,815)
+            > matched rows     25,361
+            >                 ========
+            > rows total       25,361
+mutate: no changes
+filter: removed 27,909 rows (6%), 439,586 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (439,586)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-15 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 8,728 values (49%) of 'patient_last_name' (0 new NA)
+        changed 8,575 values (49%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 17,376 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 2,299 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (   839)
+           > rows only in y  (97,529)
+           > matched rows     16,840
+           >                 ========
+           > rows total       16,840
+semi_join: added no columns
+           > rows only in x  ( 17,679)
+           > rows only in y  (521,346)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 194,500 rows (92%), 17,743 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 1,496)
+            > rows only in y  ( 2,390)
+            > matched rows     16,247
+            >                 ========
+            > rows total       16,247
+mutate: no changes
+filter: removed 17,875 rows (8%), 194,368 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (194,368)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-16 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 9,296 values (50%) of 'patient_last_name' (0 new NA)
+        changed 9,137 values (49%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 18,430 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 2,470 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (   907)
+           > rows only in y  (97,126)
+           > matched rows     17,841
+           >                 ========
+           > rows total       17,841
+semi_join: added no columns
+           > rows only in x  ( 18,748)
+           > rows only in y  (523,160)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 210,337 rows (92%), 18,982 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 1,621)
+            > rows only in y  ( 2,491)
+            > matched rows     17,361
+            >                 ========
+            > rows total       17,361
+mutate: no changes
+filter: removed 19,122 rows (8%), 210,197 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (210,197)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-17 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 9,310 values (50%) of 'patient_last_name' (0 new NA)
+        changed 9,153 values (49%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 18,249 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 2,426 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (   911)
+           > rows only in y  (97,820)
+           > matched rows     17,651
+           >                 ========
+           > rows total       17,651
+semi_join: added no columns
+           > rows only in x  ( 18,562)
+           > rows only in y  (523,370)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 193,851 rows (91%), 18,764 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 1,599)
+            > rows only in y  ( 2,426)
+            > matched rows     17,165
+            >                 ========
+            > rows total       17,165
+mutate: no changes
+filter: removed 18,898 rows (9%), 193,717 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (193,717)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-18 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 14,746 values (50%) of 'patient_last_name' (0 new NA)
+        changed 14,503 values (49%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 29,168 values (99%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,324 values (15%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,542)
+           > rows only in y  (87,851)
+           > matched rows     28,068
+           >                 ========
+           > rows total       28,068
+semi_join: added no columns
+           > rows only in x  ( 29,610)
+           > rows only in y  (524,024)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 448,396 rows (94%), 30,100 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,381)
+            > rows only in y  ( 3,967)
+            > matched rows     27,719
+            >                 ========
+            > rows total       27,719
+mutate: no changes
+filter: removed 30,474 rows (6%), 448,022 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (448,022)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-19 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 15,329 values (50%) of 'patient_last_name' (0 new NA)
+        changed 15,071 values (49%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 30,044 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,367 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,595)
+           > rows only in y  (87,911)
+           > matched rows     28,923
+           >                 ========
+           > rows total       28,923
+semi_join: added no columns
+           > rows only in x  ( 30,518)
+           > rows only in y  (525,435)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 451,834 rows (94%), 31,009 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,456)
+            > rows only in y  ( 4,099)
+            > matched rows     28,553
+            >                 ========
+            > rows total       28,553
+mutate: no changes
+filter: removed 31,386 rows (7%), 451,457 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (451,457)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-20 14:00:06
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 15,657 values (50%) of 'patient_last_name' (0 new NA)
+        changed 15,394 values (49%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 30,725 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,447 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,640)
+           > rows only in y  (88,034)
+           > matched rows     29,585
+           >                 ========
+           > rows total       29,585
+semi_join: added no columns
+           > rows only in x  ( 31,225)
+           > rows only in y  (526,795)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 454,253 rows (93%), 31,784 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,483)
+            > rows only in y  ( 4,127)
+            > matched rows     29,301
+            >                 ========
+            > rows total       29,301
+mutate: no changes
+filter: removed 32,167 rows (7%), 453,870 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (453,870)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-21 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 10,872 values (51%) of 'patient_last_name' (0 new NA)
+        changed 10,678 values (50%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 20,878 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 2,694 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,099)
+           > rows only in y  (98,203)
+           > matched rows     20,179
+           >                 ========
+           > rows total       20,179
+semi_join: added no columns
+           > rows only in x  ( 21,278)
+           > rows only in y  (528,330)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 200,798 rows (90%), 21,521 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 1,747)
+            > rows only in y  ( 2,702)
+            > matched rows     19,774
+            >                 ========
+            > rows total       19,774
+mutate: no changes
+filter: removed 21,667 rows (10%), 200,652 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (200,652)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-22 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 16,579 values (50%) of 'patient_last_name' (0 new NA)
+        changed 16,287 values (50%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 32,364 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,664 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,748)
+           > rows only in y  (88,364)
+           > matched rows     31,136
+           >                 ========
+           > rows total       31,136
+semi_join: added no columns
+           > rows only in x  ( 32,884)
+           > rows only in y  (530,500)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 462,095 rows (93%), 33,565 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,653)
+            > rows only in y  ( 4,235)
+            > matched rows     30,912
+            >                 ========
+            > rows total       30,912
+mutate: no changes
+filter: removed 33,951 rows (7%), 461,709 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (461,709)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-23 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 17,075 values (51%) of 'patient_last_name' (0 new NA)
+        changed 16,773 values (50%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 33,150 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,754 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,781)
+           > rows only in y  (88,557)
+           > matched rows     31,902
+           >                 ========
+           > rows total       31,902
+semi_join: added no columns
+           > rows only in x  ( 33,683)
+           > rows only in y  (532,420)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 462,447 rows (93%), 34,426 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,704)
+            > rows only in y  ( 4,278)
+            > matched rows     31,722
+            >                 ========
+            > rows total       31,722
+mutate: no changes
+filter: removed 34,813 rows (7%), 462,060 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (462,060)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-24 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 12,273 values (52%) of 'patient_last_name' (0 new NA)
+        changed 12,059 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 23,162 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 3,005 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,239)
+           > rows only in y  (98,638)
+           > matched rows     22,346
+           >                 ========
+           > rows total       22,346
+semi_join: added no columns
+           > rows only in x  ( 23,585)
+           > rows only in y  (533,796)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 206,093 rows (90%), 24,078 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 1,958)
+            > rows only in y  ( 2,810)
+            > matched rows     22,120
+            >                 ========
+            > rows total       22,120
+mutate: no changes
+filter: removed 24,226 rows (11%), 205,945 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (205,945)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-25 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 12,685 values (52%) of 'patient_last_name' (0 new NA)
+        changed 12,465 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 23,933 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 3,088 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,282)
+           > rows only in y  (98,419)
+           > matched rows     23,087
+           >                 ========
+           > rows total       23,087
+semi_join: added no columns
+           > rows only in x  ( 24,369)
+           > rows only in y  (534,726)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 213,654 rows (90%), 24,860 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,035)
+            > rows only in y  ( 2,918)
+            > matched rows     22,825
+            >                 ========
+            > rows total       22,825
+mutate: no changes
+filter: removed 25,011 rows (10%), 213,503 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (213,503)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-26 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 17,827 values (51%) of 'patient_last_name' (0 new NA)
+        changed 17,524 values (50%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 34,350 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,825 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,853)
+           > rows only in y  (89,007)
+           > matched rows     33,034
+           >                 ========
+           > rows total       33,034
+semi_join: added no columns
+           > rows only in x  ( 34,887)
+           > rows only in y  (535,653)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 457,898 rows (93%), 35,665 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,772)
+            > rows only in y  ( 4,376)
+            > matched rows     32,893
+            >                 ========
+            > rows total       32,893
+mutate: no changes
+filter: removed 36,053 rows (7%), 457,510 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (457,510)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-27 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 15,874 values (52%) of 'patient_last_name' (0 new NA)
+        changed 15,613 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 30,101 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,010 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,606)
+           > rows only in y  (93,726)
+           > matched rows     29,012
+           >                 ========
+           > rows total       29,012
+semi_join: added no columns
+           > rows only in x  ( 30,618)
+           > rows only in y  (536,739)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 324,611 rows (91%), 31,417 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,528)
+            > rows only in y  ( 3,682)
+            > matched rows     28,889
+            >                 ========
+            > rows total       28,889
+mutate: no changes
+filter: removed 31,643 rows (9%), 324,385 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (324,385)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-28 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 18,525 values (51%) of 'patient_last_name' (0 new NA)
+        changed 18,214 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 35,438 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,920 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,904)
+           > rows only in y  (89,189)
+           > matched rows     34,127
+           >                 ========
+           > rows total       34,127
+semi_join: added no columns
+           > rows only in x  ( 36,031)
+           > rows only in y  (538,061)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 462,288 rows (93%), 36,886 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,835)
+            > rows only in y  ( 4,436)
+            > matched rows     34,051
+            >                 ========
+            > rows total       34,051
+mutate: no changes
+filter: removed 37,285 rows (7%), 461,889 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (461,889)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-29 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 18,987 values (51%) of 'patient_last_name' (0 new NA)
+        changed 18,665 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 36,340 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 5,026 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,955)
+           > rows only in y  (89,245)
+           > matched rows     34,987
+           >                 ========
+           > rows total       34,987
+semi_join: added no columns
+           > rows only in x  ( 36,942)
+           > rows only in y  (540,149)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 466,676 rows (93%), 37,819 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,879)
+            > rows only in y  ( 4,496)
+            > matched rows     34,940
+            >                 ========
+            > rows total       34,940
+mutate: no changes
+filter: removed 38,223 rows (8%), 466,272 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (466,272)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-30 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 14,029 values (52%) of 'patient_last_name' (0 new NA)
+        changed 13,787 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 26,304 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 3,362 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,398)
+           > rows only in y  (99,207)
+           > matched rows     25,439
+           >                 ========
+           > rows total       25,439
+semi_join: added no columns
+           > rows only in x  ( 26,837)
+           > rows only in y  (540,882)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 211,970 rows (89%), 27,413 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,148)
+            > rows only in y  ( 3,069)
+            > matched rows     25,265
+            >                 ========
+            > rows total       25,265
+mutate: no changes
+filter: removed 27,577 rows (12%), 211,806 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (211,806)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-08-31 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 14,502 values (52%) of 'patient_last_name' (0 new NA)
+        changed 14,254 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 27,170 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 3,500 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,450)
+           > rows only in y  (99,276)
+           > matched rows     26,273
+           >                 ========
+           > rows total       26,273
+semi_join: added no columns
+           > rows only in x  ( 27,723)
+           > rows only in y  (543,176)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 216,360 rows (88%), 28,416 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,215)
+            > rows only in y  ( 3,083)
+            > matched rows     26,201
+            >                 ========
+            > rows total       26,201
+mutate: no changes
+filter: removed 28,591 rows (12%), 216,185 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (216,185)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-09-01 14:00:06
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 20,294 values (52%) of 'patient_last_name' (0 new NA)
+        changed 19,947 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 38,576 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 5,365 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 2,077)
+           > rows only in y  (89,549)
+           > matched rows     37,147
+           >                 ========
+           > rows total       37,147
+semi_join: added no columns
+           > rows only in x  ( 39,224)
+           > rows only in y  (546,277)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 469,543 rows (92%), 40,394 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 3,038)
+            > rows only in y  ( 4,540)
+            > matched rows     37,356
+            >                 ========
+            > rows total       37,356
+mutate: no changes
+filter: removed 40,802 rows (8%), 469,135 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (469,135)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-09-02 14:00:02
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 20,564 values (52%) of 'patient_last_name' (0 new NA)
+        changed 20,215 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 39,010 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 5,416 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 2,096)
+           > rows only in y  (89,642)
+           > matched rows     37,585
+           >                 ========
+           > rows total       37,585
+semi_join: added no columns
+           > rows only in x  ( 39,681)
+           > rows only in y  (547,339)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 468,723 rows (92%), 40,899 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 3,061)
+            > rows only in y  ( 4,558)
+            > matched rows     37,838
+            >                 ========
+            > rows total       37,838
+mutate: no changes
+filter: removed 41,309 rows (8%), 468,313 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (468,313)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-09-03 14:00:01
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 20,655 values (52%) of 'patient_last_name' (0 new NA)
+        changed 20,304 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 39,190 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 5,416 values (14%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 2,091)
+           > rows only in y  (89,728)
+           > matched rows     37,780
+           >                 ========
+           > rows total       37,780
+semi_join: added no columns
+           > rows only in x  ( 39,871)
+           > rows only in y  (547,734)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 467,194 rows (92%), 41,010 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 3,044)
+            > rows only in y  ( 4,642)
+            > matched rows     37,966
+            >                 ========
+            > rows total       37,966
+mutate: no changes
+filter: removed 41,405 rows (8%), 466,799 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (466,799)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-09-04 14:00:01
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 21,096 values (52%) of 'patient_last_name' (0 new NA)
+        changed 20,739 values (51%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 39,851 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 5,457 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 2,140)
+           > rows only in y  (89,781)
+           > matched rows     38,409
+           >                 ========
+           > rows total       38,409
+semi_join: added no columns
+           > rows only in x  ( 40,549)
+           > rows only in y  (548,857)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 468,893 rows (92%), 41,671 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 3,095)
+            > rows only in y  ( 4,742)
+            > matched rows     38,576
+            >                 ========
+            > rows total       38,576
+mutate: no changes
+filter: removed 42,070 rows (8%), 468,494 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (468,494)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-09-05 14:00:01
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 4 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 2 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+Error: Could not open remote file for reading: Unknown error in libssh2
+Retrying in 1 seconds.
+
+2021-09-06 14:00:01
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 17,554 values (53%) of 'patient_last_name' (0 new NA)
+        changed 17,249 values (52%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 32,717 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,318 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,762)
+           > rows only in y  (97,884)
+           > matched rows     31,643
+           >                 ========
+           > rows total       31,643
+semi_join: added no columns
+           > rows only in x  ( 33,405)
+           > rows only in y  (551,467)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 278,746 rows (89%), 34,338 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,762)
+            > rows only in y  ( 3,816)
+            > matched rows     31,576
+            >                 ========
+            > rows total       31,576
+mutate: no changes
+filter: removed 34,562 rows (11%), 278,522 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (278,522)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
+
+2021-09-07 14:00:01
+Setting global options...
+Setting ennotify options...
+Importing magrittr pipe...
+Creating notification functions...
+Creating insistent acns data checking function...
+Creating safe acns upload function...
+Creating iteration function...
+Checking for new data...
+Sending acns start notification...
+
+Downloading data...
+Preparing data and adding nbs...
+mutate: changed 17,195 values (53%) of 'patient_last_name' (0 new NA)
+        changed 16,907 values (52%) of 'patient_first_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 32,015 values (98%) of 'patient_street_addr_1' (0 new NA)
+        changed 4,224 values (13%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  ( 1,750)
+           > rows only in y  (99,655)
+           > matched rows     30,984
+           >                 ========
+           > rows total       30,984
+semi_join: added no columns
+           > rows only in x  ( 32,734)
+           > rows only in y  (554,935)
+           > matched rows           0
+           >                 =========
+           > rows total             0
+filter: removed 235,575 rows (88%), 33,602 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  ( 2,556)
+            > rows only in y  ( 3,612)
+            > matched rows     31,046
+            >                 ========
+            > rows total       31,046
+mutate: no changes
+filter: removed 33,801 rows (13%), 235,376 rows remaining
+inner_join: added 19 columns (patient_local_id_inv_, inv_case_status, jurisdiction_nm, alt_county, patient_last_name, ...)
+            > rows only in x  (235,376)
+            > rows only in y  (      0)
+            > matched rows           0
+            >                 =========
+            > rows total             0
+mutate: no changes
+Translating to acns format...
+Archiving acns data...
+Sending acns end notification...
+
+Done.
