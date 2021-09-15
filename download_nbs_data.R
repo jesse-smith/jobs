@@ -171,6 +171,9 @@ inv <- coviData::process_inv()
 pcr <- coviData::process_pcr(inv = inv)
 gc(verbose = FALSE)
 
+# Save SAS data
+coviData::write_sas_nbs(inv = inv, pcr = pcr)
+
 # Create daily report
 coviData::ennotify_context("creating daily report")
 covidReport::rpt_daily_pptx(inv = inv, pcr = pcr)
