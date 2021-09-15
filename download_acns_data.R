@@ -10,7 +10,7 @@ run_script <- function() {
   coviData::ennotify_context("setting ennotify options", inform = TRUE)
   coviData::ennotify_inform(TRUE)
   coviData::ennotify_to(
-    "jesse.smith@shelbycountytn.gov",
+    "allison.plaxco@shelbycountytn.gov",
     "karim.gilani@shelbycountytn.gov",
     "chaitra.subramanya@shelbycountytn.gov",
     "Liang.Li@shelbycountytn.gov",
@@ -46,6 +46,7 @@ run_script <- function() {
     it_email <- c(
       "anthony.parker@shelbycountytn.gov",
       "troy.white@shelbycountytn.gov",
+      "Jerrel.Moore@shelbycountytn.gov",
       "itecdbadmins@shelbycountytn.gov"
     )
 
@@ -184,7 +185,7 @@ run_script <- function() {
 
 capture.output(
   run_script(),
-  file = "C:/Users/Jesse.Smith/Documents/jobs/log/download_acns_data.log",
+  file = "C:/Users/Allison.Plaxco/Documents/jobs/log/download_acns_data.log",
   append = TRUE,
   type = "message"
 )

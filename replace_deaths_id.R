@@ -6,11 +6,11 @@ run_script <- function() {
   coviData::ennotify_inform(TRUE)
   if (weekdays(Sys.Date()) == "Tuesday") {
     coviData::ennotify_to(
-      "Jesse.Smith@shelbycountytn.gov",
+      "Allison.Plaxco@shelbycountytn.gov",
       "Chaitra.Subramanya@shelbycountytn.gov"
     )
   } else {
-    coviData::ennotify_to("Jesse.Smith@shelbycountytn.gov")
+    coviData::ennotify_to("Allison.Plaxco@shelbycountytn.gov")
   }
 
   message("\n", Sys.time())
@@ -21,7 +21,7 @@ run_script <- function() {
 
 capture.output(
   run_script(),
-  file = "C:/Users/Jesse.Smith/Documents/jobs/log/replace_deaths_id.log",
+  file = "C:/Users/Allison.Plaxco/Documents/jobs/log/replace_deaths_id.log",
   append = TRUE,
   type = "message"
 )

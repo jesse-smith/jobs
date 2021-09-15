@@ -10,7 +10,6 @@ message("\n", Sys.time())
 coviData::ennotify_set_options(
   "Chaitra.Subramanya@shelbycountytn.gov",
   "Allison.Plaxco@shelbycountytn.gov",
-  "Jesse.Smith@shelbycountytn.gov",
   "Liang.Li@shelbycountytn.gov"
 )
 
@@ -205,10 +204,9 @@ pos_inv <- coviData::pos(inv)
 remove(inv)
 gc(verbose = FALSE)
 
-# Switch to report errors to Allison & Jesse only (except Thursdays)
+# Switch to report errors to Allison only (except Thursdays)
 if (weekdays(lubridate::today()) != "Thursday") {
   coviData::ennotify_to(
-    "Jesse.Smith@shelbycountytn.gov",
     "Allison.Plaxco@shelbycountytn.gov"
   )
 }
@@ -248,8 +246,8 @@ active_map[["data"]] %>%
     suffix = c("_active", "_test")
   ) %>%
   dplyr::select("zip", "n_active", "n_test") %>%
-  coviData::write_file_delim(
-      "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips.csv"
+  coviData::write_file_delim(paste0(
+      "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips",Sys.Date(),".csv")
   )
 
 tibble::tibble(
@@ -338,3 +336,20 @@ if (weekdays(lubridate::today()) == "Thursday") {
       )
     )
 }
+
+
+# Active ped case rate map
+active_ped_map <- covidReport:::active_ped_map_rate()
+path_active_ped_map <- coviData::path_create(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "jtf_figs/active_ped_map/", paste0("active_ped_map_", coviData::date_inv()),
+  ext = "png"
+)
+coviData::save_plot(active_ped_map, path = path_active_ped_map, ratio = c(12,9), size = 1.125)
+
+
+
+#add testing sites to the maps
+covidReport:::add_ts_active_map()
+covidReport:::add_ts_ped_map()
+covidReport:::add_ts_test_map()

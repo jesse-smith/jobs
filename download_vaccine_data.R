@@ -8,7 +8,6 @@ message("\n", Sys.time())
 
 # Set up `ennotify()` options for error tracing/notification
 coviData::ennotify_set_options(
-  "Jesse.Smith@shelbycountytn.gov",
   "Chaitra.Subramanya@shelbycountytn.gov",
   "Allison.Plaxco@shelbycountytn.gov",
   "Liang.Li@shelbycountytn.gov"
