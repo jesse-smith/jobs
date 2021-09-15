@@ -4,7 +4,6 @@ on.exit(coviData::log_end(), add = TRUE)
 message("\n", Sys.time())
 
 coviData::ennotify_set_options(
-  "Jesse.Smith@shelbycountytn.gov",
   "Karim.Gilani@shelbycountytn.gov",
   "Faisal.Mohamed@shelbycountytn.gov",
   "Allison.Plaxco@shelbycountytn.gov",

@@ -6,7 +6,7 @@ run_script <- function() {
   coviData::ennotify_context("setting ennotify options", inform = TRUE)
   coviData::ennotify_inform(TRUE)
   coviData::ennotify_to(
-    "Jesse.Smith@shelbycountytn.gov",
+    "Allison.Plaxco@shelbycountytn.gov",
     "Faisal.Mohamed@shelbycountytn.gov"
   )
 
@@ -28,7 +28,7 @@ run_script <- function() {
 
 capture.output(
   run_script(),
-  file = "C:/Users/Jesse.Smith/Documents/jobs/log/check_deaths.log",
+  file = "C:/Users/Allison.Plaxco/Documents/jobs/log/check_deaths.log",
   append = TRUE,
   type = "message"
 )

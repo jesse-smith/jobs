@@ -7,7 +7,7 @@ run_script <- function() {
 
   error_notify <- function(error, .fn) {
     coviData::notify(
-      to = "Jesse.Smith@shelbycountytn.gov",
+      to = "Allison.Plaxco@shelbycountytn.gov",
       subject = paste0(.fn, " Failed on ", Sys.Date()),
       body = paste0(
         "The 'download_integrated_data.R' script failed at ",
@@ -56,7 +56,7 @@ run_script <- function() {
 
 capture.output(
   run_script(),
-  file = "C:/Users/Jesse.Smith/Documents/jobs/log/download_integrated_data.log",
+  file = "C:/Users/Allison.Plaxco/Documents/jobs/log/download_integrated_data.log",
   append = TRUE,
   type =  "message"
 )

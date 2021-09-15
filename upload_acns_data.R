@@ -5,7 +5,7 @@ run_script <- function() {
 
   coviData::ennotify_context("setting ennotify options", inform = TRUE)
   coviData::ennotify_inform(TRUE)
-  coviData::ennotify_to("Jesse.Smith@shelbycountytn.gov")
+  coviData::ennotify_to("Allison.Plaxco@shelbycountytn.gov")
 
   message("\n", Sys.time())
 
