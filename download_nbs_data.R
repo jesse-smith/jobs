@@ -253,9 +253,33 @@ active_map[["data"]] %>%
       "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips",Sys.Date(),".csv")
   )
 
-tibble::tibble(
-  active = tidyr::drop_na(active_map[["data"]])[["n"]]
-)
+# Update deaths linelist
+pos_nbs %>%
+  dplyr::select(
+    "jurisdiction_nm",
+    "die_from_illness_ind",
+    "inv_case_status",
+    "patient_local_id",
+    "patient_first_name",
+    "patient_last_name",
+    "patient_current_sex",
+    "patient_deceased_ind",
+    "patient_deceased_dt",
+    "patient_ethnicity",
+    "patient_race_calc",
+    "age_in_years",
+    "alt_county",
+    "patient_dob",
+    "specimen_coll_dt"
+  ) %>%
+  dplyr::mutate(
+    patient_deceased_dt = .data[["patient_deceased_dt"]] %>%
+      lubridate::ymd_hms() %>%
+      lubridate::as_date()
+  ) %>%
+  dplyr::filter(.data[["patient_deceased_ind"]] %in% c("Y", "Yes")) %>%
+  dplyr::rename_with(stringr::str_to_upper) %>%
+  openxlsx::write.xlsx(coviData:::path_deaths("nbs"), overwrite = TRUE)
 
 # Save report dates
 coviData::ennotify_context("archiving report date")
