@@ -10,7 +10,9 @@ message("\n", Sys.time())
 coviData::ennotify_set_options(
   "Chaitra.Subramanya@shelbycountytn.gov",
   "Allison.Plaxco@shelbycountytn.gov",
-  "Liang.Li@shelbycountytn.gov"
+  "Liang.Li@shelbycountytn.gov",
+  "Rachel.Rice@shelbycountytn.gov",
+  "Hawa.Abdalla@shelbycountytn.gov"
 )
 
 # Import -----------------------------------------------------------------------

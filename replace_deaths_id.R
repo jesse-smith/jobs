@@ -7,7 +7,7 @@ run_script <- function() {
   if (weekdays(Sys.Date()) == "Tuesday") {
     coviData::ennotify_to(
       "Allison.Plaxco@shelbycountytn.gov",
-      "Chaitra.Subramanya@shelbycountytn.gov"
+      "Liang.Li@shelbycountytn.gov"
     )
   } else {
     coviData::ennotify_to("Allison.Plaxco@shelbycountytn.gov")

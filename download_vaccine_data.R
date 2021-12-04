@@ -8,9 +8,10 @@ message("\n", Sys.time())
 
 # Set up `ennotify()` options for error tracing/notification
 coviData::ennotify_set_options(
-  "Chaitra.Subramanya@shelbycountytn.gov",
   "Allison.Plaxco@shelbycountytn.gov",
-  "Liang.Li@shelbycountytn.gov"
+  "Liang.Li@shelbycountytn.gov",
+  "Rachel.Rice@shelbycountytn.gov",
+  "Hawa.Abdalla@shelbycountytn.gov"
 )
 
 # Import -----------------------------------------------------------------------
@@ -157,9 +158,14 @@ if (rlang::is_interactive()) show(p_map_pct)
 coviData::save_plot(p_map_pct, path = v_map_pct_path, ratio = c(12, 9), size = 1.125)
 
 # Email Vaccination Numbers
+date = NULL
 coviData::ennotify_context("summarizing and sending vaccination numbers")
-recent_table <- gt::as_raw_html(covidReport::vac_table_recent(v_data))
-dose_table <- gt::as_raw_html(covidReport::vac_table_totals(v_data))
+recent_table <- gt::as_raw_html(covidReport:::vac_table_recent_email(date = NULL,
+                                                                     data = coviData:::vac_prep_all(coviData::read_vac(date = date))
+                                                                     ))
+dose_table <- gt::as_raw_html(covidReport:::vac_table_totals_email(data_all = coviData:::vac_prep_all(coviData::read_vac(date = date)),
+                                                                   data_12 = coviData:::vac_prep(coviData::read_vac(date = date)),
+                                                                   date = NULL))
 
 Sys.sleep(10L)
 
@@ -176,3 +182,9 @@ coviData::notify(
 )
 
 rlang::inform("Done.")
+
+
+
+# Report ----------------------------------------------------------------------
+covidReport:::rpt_vac_pptx()
+

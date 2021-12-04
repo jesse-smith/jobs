@@ -7,7 +7,9 @@ coviData::ennotify_set_options(
   "Karim.Gilani@shelbycountytn.gov",
   "Faisal.Mohamed@shelbycountytn.gov",
   "Allison.Plaxco@shelbycountytn.gov",
-  "Liang.Li@shelbycountytn.gov"
+  "Liang.Li@shelbycountytn.gov",
+  "Rachel.Rice@shelbycountytn.gov",
+  "Hawa.Abdalla@shelbycountytn.gov"
 )
 
 # Load pipe

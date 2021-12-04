@@ -14,7 +14,9 @@ run_script <- function() {
     "karim.gilani@shelbycountytn.gov",
     "chaitra.subramanya@shelbycountytn.gov",
     "Liang.Li@shelbycountytn.gov",
-    "ITECDbAdmins@shelbycountytn.gov"
+    "ITECDbAdmins@shelbycountytn.gov",
+    "Rachel.Rice@shelbycountytn.gov",
+    "Hawa.Abdalla@shelbycountytn.gov"
   )
 
   # Load pipe
