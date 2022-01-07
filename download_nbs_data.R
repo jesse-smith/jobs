@@ -353,8 +353,8 @@ if (weekdays(lubridate::today()) == "Thursday") {
     gt::tab_header(title = title) %>%
     gt::opt_row_striping() %>%
     gt::cols_label(Cases = "", Count = "") %>%
-    gt::fmt_markdown(columns = dplyr::everything(), rows = c(F,F,T,T,T)) %T>%
-    {show(.)} %>%
+    gt::fmt_markdown(columns = dplyr::everything(), rows = c(F,F,T,T,T)) %>%
+    {show(.); .} %>%
     gt::gtsave(
       coviData::path_create(
         "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/jtf_figs/rt_table",
