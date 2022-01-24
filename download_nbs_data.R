@@ -8,11 +8,10 @@ message("\n", Sys.time())
 
 # Set `ennotify()` options for error tracing/notification
 coviData::ennotify_set_options(
-  "Chaitra.Subramanya@shelbycountytn.gov",
   "Allison.Plaxco@shelbycountytn.gov",
   "Liang.Li@shelbycountytn.gov",
   "Rachel.Rice@shelbycountytn.gov",
-  "Hawa.Abdalla@shelbycountytn.gov"
+  "Adetayo.Adetoro@shelbycountytn.gov"
 )
 
 # Import -----------------------------------------------------------------------
@@ -181,6 +180,14 @@ coviData::ennotify_context("creating daily report")
 covidReport::rpt_daily_pptx(inv = inv, pcr = pcr)
 gc(verbose = FALSE)
 
+
+# coviData::ennotify_context("creating daily report")
+# covidReport::rpt_daily_pptx(inv = inv, pcr = pcr,
+#                             dir =  "C:/Users/allison.plaxco/Desktop/automated")
+# gc(verbose = FALSE)
+
+
+
 # Create Google Sheets output
 coviData::ennotify_context("creating google sheets timeseries")
 coviData::write_file_delim(
@@ -227,8 +234,21 @@ path_test_map <- coviData::path_create(
   ext = "png"
 )
 coviData::save_plot(test_map, path = path_test_map, ratio = c(12,9), size = 1.125)
+
+
+# Testing rate map, grant zip highlighted
+grant_test_map <- covidReport::grant_zip_test_map_rate(pcr)
+gc(verbose = FALSE)
+path_test_map <- coviData::path_create(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "jtf_figs/test_map/", paste0("grant_test_map_", coviData::date_inv()),
+  ext = "png"
+)
+coviData::save_plot(grant_test_map, path = path_test_map, ratio = c(12,9), size = 1.125)
 remove(pcr)
 gc(verbose = FALSE)
+
+
 
 # Active case rate map
 active_map <- covidReport::active_map_rate(pos_inv)
@@ -238,6 +258,16 @@ path_active_map <- coviData::path_create(
   ext = "png"
 )
 coviData::save_plot(active_map, path = path_active_map, ratio = c(12,9), size = 1.125)
+
+
+# Active case rate map
+grant_active_map <- covidReport::grant_zip_active_map_rate(pos_inv)
+path_active_map <- coviData::path_create(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "jtf_figs/active_case_map/", paste0("grant_active_case_map_", coviData::date_inv()),
+  ext = "png"
+)
+coviData::save_plot(grant_active_map, path = path_active_map, ratio = c(12,9), size = 1.125)
 
 # Save map output for Google Sheets
 
@@ -289,10 +319,19 @@ rt_plot <- covidModel::plot_rt(rt, .rough_rt = rough_rt)
 rt_path <- coviData::path_create(
   "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/jtf_figs/rt_fig",
   paste0("rt_plot", Sys.Date()),
-  ext = "png"
+  ext = "svg"
 )
 if (rlang::is_interactive()) show(rt_plot)
-covidReport::save_plot(rt_plot, path = rt_path, force = TRUE)
+#covidReport::save_plot(rt_plot, path = rt_path, force = TRUE)
+
+ggplot2::ggsave(
+  rt_path,
+  plot = rt_plot,
+  device = "svg",
+  width = 16,
+  height = 9,
+  dpi = 300
+)
 
 if (weekdays(lubridate::today()) == "Thursday") {
   coviData::ennotify_context("creating Rt table")
@@ -331,8 +370,8 @@ if (weekdays(lubridate::today()) == "Thursday") {
     gt::tab_header(title = title) %>%
     gt::opt_row_striping() %>%
     gt::cols_label(Cases = "", Count = "") %>%
-    gt::fmt_markdown(columns = dplyr::everything(), rows = c(F,F,T,T,T)) %T>%
-    {show(.)} %>%
+    gt::fmt_markdown(columns = dplyr::everything(), rows = c(F,F,T,T,T)) %>%
+    {show(.); .} %>%
     gt::gtsave(
       coviData::path_create(
         "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/jtf_figs/rt_table",
@@ -355,6 +394,8 @@ coviData::save_plot(active_ped_map, path = path_active_ped_map, ratio = c(12,9),
 
 
 #add testing sites to the maps
+covidReport:::add_ts_grant_active_map()
+covidReport:::add_ts_grant_test_map()
 covidReport:::add_ts_active_map()
 covidReport:::add_ts_ped_map()
 covidReport:::add_ts_test_map()
