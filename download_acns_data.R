@@ -12,11 +12,10 @@ run_script <- function() {
   coviData::ennotify_to(
     "allison.plaxco@shelbycountytn.gov",
     "karim.gilani@shelbycountytn.gov",
-    "chaitra.subramanya@shelbycountytn.gov",
     "Liang.Li@shelbycountytn.gov",
     "ITECDbAdmins@shelbycountytn.gov",
     "Rachel.Rice@shelbycountytn.gov",
-    "Hawa.Abdalla@shelbycountytn.gov"
+    "Logan.Sell@shelbycountytn.gov"
   )
 
   # Load pipe

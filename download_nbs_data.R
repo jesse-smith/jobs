@@ -237,7 +237,7 @@ coviData::save_plot(test_map, path = path_test_map, ratio = c(12,9), size = 1.12
 
 
 # Testing rate map, grant zip highlighted
-grant_test_map <- covidReport::grant_zip_test_map_rate(pcr)
+grant_test_map <- covidReport:::grant_zip_test_map_rate(pcr)
 gc(verbose = FALSE)
 path_test_map <- coviData::path_create(
   "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
@@ -261,7 +261,7 @@ coviData::save_plot(active_map, path = path_active_map, ratio = c(12,9), size = 
 
 
 # Active case rate map
-grant_active_map <- covidReport::grant_zip_active_map_rate(pos_inv)
+grant_active_map <- covidReport:::grant_zip_active_map_rate(pos_inv)
 path_active_map <- coviData::path_create(
   "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
   "jtf_figs/active_case_map/", paste0("grant_active_case_map_", coviData::date_inv()),
@@ -286,7 +286,7 @@ active_map[["data"]] %>%
   )
 
 # Update deaths linelist
-pos_nbs %>%
+pos_inv %>%
   dplyr::select(
     "jurisdiction_nm",
     "die_from_illness_ind",
