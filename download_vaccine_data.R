@@ -1,6 +1,6 @@
 # Setup ------------------------------------------------------------------------
 # Log messages/warnings/errors
-coviData::log_start("download_vaccine_data.log")
+coviData::log_start("download_vaccine_data.log", dir = "C:/Users/allison.plaxco/Documents/jobs/log")
 on.exit(coviData::log_end(), add = TRUE)
 
 # Log start time
@@ -11,7 +11,7 @@ coviData::ennotify_set_options(
   "Allison.Plaxco@shelbycountytn.gov",
   "Liang.Li@shelbycountytn.gov",
   "Rachel.Rice@shelbycountytn.gov",
-  "Adetayo.Adetoro@shelbycountytn.gov"
+  "Jennifer.Kmet@shelbycountytn.gov"
 )
 
 # Import -----------------------------------------------------------------------
@@ -200,12 +200,9 @@ coviData::save_plot(p_map_pct_grant_f, path = v_map_pct_path, ratio = c(12, 9), 
 # Email Vaccination Numbers
 date = NULL
 coviData::ennotify_context("summarizing and sending vaccination numbers")
-recent_table <- gt::as_raw_html(covidReport:::vac_table_recent_email(date = NULL,
-                                                                     data = coviData:::vac_prep_all(coviData::read_vac(date = date))
-                                                                     ))
-dose_table <- gt::as_raw_html(covidReport:::vac_table_totals_email(data_all = coviData:::vac_prep_all(coviData::read_vac(date = date)),
-                                                                   data_12 = coviData:::vac_prep(coviData::read_vac(date = date)),
-                                                                   date = NULL))
+recent_table <- gt::as_raw_html(covidReport:::vac_table_recent_email(date = NULL))
+
+dose_table <- gt::as_raw_html(covidReport:::vac_table_totals_email(date = NULL))
 
 Sys.sleep(10L)
 
@@ -227,4 +224,3 @@ rlang::inform("Done.")
 
 # Report ----------------------------------------------------------------------
 covidReport:::rpt_vac_pptx()
-

@@ -1,6 +1,6 @@
 # Setup ------------------------------------------------------------------------
 # Log messages/warnings/errors
-coviData::log_start("download_nbs_data.log")
+coviData::log_start("download_nbs_data.log", dir = "C:/Users/allison.plaxco/Documents/jobs/log")
 on.exit(coviData::log_end(), add = TRUE)
 
 # Log start time
@@ -11,7 +11,7 @@ coviData::ennotify_set_options(
   "Allison.Plaxco@shelbycountytn.gov",
   "Liang.Li@shelbycountytn.gov",
   "Rachel.Rice@shelbycountytn.gov",
-  "Adetayo.Adetoro@shelbycountytn.gov"
+  "Jennifer.Kmet@shelbycountytn.gov"
 )
 
 # Import -----------------------------------------------------------------------
@@ -76,9 +76,9 @@ insist_download_nbs_snapshot <- purrr::insistently(
   coviData::download_nbs_snapshot
 )
 
-insist_convert_nbs_snapshot <- purrr::insistently(
-  coviData::convert_nbs_snapshot
-)
+# insist_convert_nbs_snapshot <- purrr::insistently(
+#   coviData::convert_nbs_snapshot
+# )
 
 insist_download_pcr_snapshot <- purrr::insistently(
   coviData::download_pcr_snapshot
@@ -178,6 +178,7 @@ coviData::write_sas_nbs(inv = inv, pcr = pcr)
 # Create daily report
 coviData::ennotify_context("creating daily report")
 covidReport::rpt_daily_pptx(inv = inv, pcr = pcr)
+covidReport:::rpt_weekly_pptx(inv = inv, pcr = pcr)
 gc(verbose = FALSE)
 
 
@@ -210,6 +211,7 @@ if (weekdays(lubridate::today()) == "Thursday") {
   to <- c(to, "Jennifer.Kmet@shelbycountytn.gov")
 }
 covidReport::rpt_daily_mail(to = to, inv = inv, pcr = pcr)
+covidReport:::rpt_weekly_mail(to = to, inv = inv, pcr = pcr)
 
 # Remove unneeded data
 pos_inv <- coviData::pos(inv)
@@ -282,7 +284,7 @@ active_map[["data"]] %>%
   ) %>%
   dplyr::select("zip", "n_active", "n_test") %>%
   coviData::write_file_delim(paste0(
-      "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips",Sys.Date(),".csv")
+    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips",Sys.Date(),".csv")
   )
 
 # Update deaths linelist
