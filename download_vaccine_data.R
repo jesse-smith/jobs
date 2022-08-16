@@ -116,7 +116,7 @@ while(!is_updated) {
 
 # Outputs ----------------------------------------------------------------------
 # Load vaccine data
-v_data <- coviData::vac_prep(coviData::read_vac())
+v_data <- coviData::vac_prep(distinct = TRUE)
 
 # Create vaccination goal plot
 coviData::ennotify_context("creating vaccination goal figure")

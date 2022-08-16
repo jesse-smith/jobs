@@ -95,8 +95,8 @@ insist_download_serology <- purrr::insistently(
 download_nbs <- function() {
   insist_download_nbs_snapshot(force = TRUE)
   Sys.sleep(3)
-  insist_convert_nbs_snapshot(force = TRUE)
-  Sys.sleep(3)
+  # insist_convert_nbs_snapshot(force = TRUE)
+  # Sys.sleep(3)
 }
 
 download_pcr <- function() {
@@ -194,7 +194,7 @@ coviData::ennotify_context("creating google sheets timeseries")
 coviData::write_file_delim(
   covidReport::gs_timeseries(inv = inv, pcr = pcr),
   path = paste0(
-    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_timeseries.csv"
+    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_timeseries_", Sys.Date(), ".csv"
   ),
   force = TRUE
 )
