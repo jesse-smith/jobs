@@ -173,7 +173,7 @@ pcr <- coviData::process_pcr(inv = inv)
 gc(verbose = FALSE)
 
 # Save SAS data
-coviData::write_sas_nbs(inv = inv, pcr = pcr)
+#coviData::write_sas_nbs(inv = inv, pcr = pcr)
 
 # Create daily report
 coviData::ennotify_context("creating daily report")
@@ -417,7 +417,17 @@ path_active_ped_map <- coviData::path_create(
 )
 coviData::save_plot(active_ped_map, path = path_active_ped_map, ratio = c(12,9), size = 1.125)
 
-
+active_ped_map[["data"]] %>%
+  tidyr::drop_na(.data[["zip"]]) %>%
+  tidyr::replace_na(list(n = 0L)) %>%
+  dplyr::select("zip", "n") %>%
+  dplyr::rename(
+    n_active = n
+  ) %>%
+  dplyr::select("zip", "n_active") %>%
+  coviData::write_file_delim(paste0(
+    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/PED_only_gs_zips",Sys.Date(),".csv")
+  )
 
 #add testing sites to the maps
 covidReport:::add_ts_grant_active_map()
