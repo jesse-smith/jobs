@@ -11,7 +11,9 @@ coviData::ennotify_set_options(
   "Allison.Plaxco@shelbycountytn.gov",
   "Liang.Li@shelbycountytn.gov",
   "Rachel.Rice@shelbycountytn.gov",
-  "Jennifer.Kmet@shelbycountytn.gov"
+  "Jennifer.Kmet@shelbycountytn.gov",
+  "Faisal.Mohamed@shelbycountytn.gov",
+  "Richard.Ewool@shelbycountytn.gov"
 )
 
 # Import -----------------------------------------------------------------------
@@ -171,6 +173,19 @@ if (rlang::is_interactive()) show(p_map_pct_f)
 coviData::save_plot(p_map_pct_f, path = v_map_pct_path, ratio = c(12, 9), size = 1.125)
 
 
+coviData::ennotify_context("creating bivalent vaccination percent zip map")
+v_map_pct_file_stem <- paste0("bivalent_vaccination_zip_pct_", Sys.Date())
+v_map_pct_path <- coviData::path_create(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "COVID-19 Vaccine Reporting/figs/vaccination_map_pct/",
+  v_map_pct_file_stem,
+  ext = "png"
+)
+p_map_pct_b <- covidReport:::vac_bivalent_map_pct(v_data)
+if (rlang::is_interactive()) show(p_map_pct_b)
+coviData::save_plot(p_map_pct_b, path = v_map_pct_path, ratio = c(12, 9), size = 1.125)
+
+
 coviData::ennotify_context("creating vaccination percent zip map with grant zips")
 v_map_pct_file_stem <- paste0("grant_vaccination_zip_pct_", Sys.Date())
 v_map_pct_path <- coviData::path_create(
@@ -195,6 +210,21 @@ v_map_pct_path <- coviData::path_create(
 p_map_pct_grant_f <- covidReport:::grant_zip_vac_fully_map_pct(v_data)
 if (rlang::is_interactive()) show(p_map_pct_grant_f)
 coviData::save_plot(p_map_pct_grant_f, path = v_map_pct_path, ratio = c(12, 9), size = 1.125)
+
+
+
+
+coviData::ennotify_context("creating bivalent vaccination percent zip map with grant zips")
+v_map_pct_file_stem <- paste0("grant_bivalent_vaccination_zip_pct_", Sys.Date())
+v_map_pct_path <- coviData::path_create(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "COVID-19 Vaccine Reporting/figs/vaccination_map_pct/",
+  v_map_pct_file_stem,
+  ext = "png"
+)
+p_map_pct_grant_b <- covidReport:::grant_zip_vac_bivalent_map_pct(v_data)
+if (rlang::is_interactive()) show(p_map_pct_grant_b)
+coviData::save_plot(p_map_pct_grant_b, path = v_map_pct_path, ratio = c(12, 9), size = 1.125)
 
 
 # Email Vaccination Numbers
@@ -224,3 +254,6 @@ rlang::inform("Done.")
 
 # Report ----------------------------------------------------------------------
 covidReport:::rpt_vac_pptx()
+
+# Generate the report we should have had Saturday------------------------------
+covidReport:::vac_back_generate()

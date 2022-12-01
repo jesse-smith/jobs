@@ -1,0 +1,598 @@
+Load packages
+-- Attaching packages ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.4     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   2.1.1     v forcats 0.5.1
+-- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warning messages:
+1: package 'tibble' was built under R version 4.1.1 
+2: package 'readr' was built under R version 4.1.2 
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Create functions
+Load NCA/NBS data
+Load NIT data
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1 seconds...
+Warning messages:
+1: Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+2: Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+3: Problem with `mutate()` input `..1`.
+i `..1 = dplyr::across(...)`.
+i All formats failed to parse. No formats found. 
+mutate: changed 1,200,774 values (53%) of 'patient_first_name' (0 new NA)
+        changed 1,218,272 values (54%) of 'patient_last_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 2,172,373 values (96%) of 'patient_street_addr_1' (0 new NA)
+        changed 365,654 values (16%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (1,985,194)
+           > rows only in y  (        0)
+           > matched rows       279,438
+           >                 ===========
+           > rows total         279,438
+semi_join: added no columns
+           > rows only in x  (  656,831)
+           > rows only in y  (        0)
+           > matched rows     1,607,801
+           >                 ===========
+           > rows total       1,607,801
+Plot epicurve
+Joining, by = c("nbs", "test_date")
+`summarise()` has grouped output by 'week'. You can override using the `.groups` argument.
+Load packages
+-- Attaching packages ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.4     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   2.1.1     v forcats 0.5.1
+-- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warning messages:
+1: package 'tibble' was built under R version 4.1.1 
+2: package 'readr' was built under R version 4.1.2 
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Create functions
+Load NCA/NBS data
+Load NIT data
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1 seconds...
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1.3 seconds...
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failure when receiving data from the peer
+Calls: download_variant_nit ... is.response -> <Anonymous> -> status_code -> <Anonymous>
+Execution halted
+Load packages
+-- Attaching packages ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.4     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   2.1.1     v forcats 0.5.1
+-- Conflicts ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warning messages:
+1: package 'tibble' was built under R version 4.1.1 
+2: package 'readr' was built under R version 4.1.2 
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Create functions
+Load NCA/NBS data
+Load NIT data
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1 seconds...
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 2.2 seconds...
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failure when receiving data from the peer
+Calls: download_variant_nit ... is.response -> <Anonymous> -> status_code -> <Anonymous>
+Execution halted
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Error in library(covidCluster) : 
+  there is no package called 'covidCluster'
+Execution halted
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Error in library(covidCluster) : 
+  there is no package called 'covidCluster'
+Execution halted
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Error in library(covidCluster) : 
+  there is no package called 'covidCluster'
+Execution halted
+Downloading GitHub repo jesse-smith/covidCluster@HEAD
+Installing 13 packages: cli, vctrs, dplyr, markdown, curl, digest, tidyr, fastmatch, data.table, gridtext, hutils, ggtext, assertr
+Warning: packages ‘dplyr’, ‘tidyr’ are in use and will not be installed
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/cli_3.4.1.zip'
+Content type 'application/zip' length 1256122 bytes (1.2 MB)
+downloaded 1.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/curl_4.3.3.zip'
+Content type 'application/zip' length 2492421 bytes (2.4 MB)
+downloaded 2.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/fastmatch_1.1-3.zip'
+Content type 'application/zip' length 39902 bytes (38 KB)
+downloaded 38 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/gridtext_0.1.5.zip'
+Content type 'application/zip' length 678596 bytes (662 KB)
+downloaded 662 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/hutils_1.8.1.zip'
+Content type 'application/zip' length 291940 bytes (285 KB)
+downloaded 285 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/ggtext_0.1.2.zip'
+Content type 'application/zip' length 1259308 bytes (1.2 MB)
+downloaded 1.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/assertr_2.8.zip'
+Content type 'application/zip' length 186836 bytes (182 KB)
+downloaded 182 KB
+
+Warning: cannot remove prior installation of package ‘cli’
+Warning: restored ‘cli’
+Warning: cannot remove prior installation of package ‘curl’
+Warning: restored ‘curl’
+installing the source packages ‘vctrs’, ‘markdown’, ‘digest’, ‘data.table’
+
+trying URL 'https://cran.rstudio.com/src/contrib/vctrs_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 959393 bytes (936 KB)
+downloaded 936 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/markdown_1.2.tar.gz'
+Content type 'application/x-gzip' length 80862 bytes (78 KB)
+downloaded 78 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/digest_0.6.30.tar.gz'
+Content type 'application/x-gzip' length 163424 bytes (159 KB)
+downloaded 159 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/data.table_1.14.4.tar.gz'
+Content type 'application/x-gzip' length 5304297 bytes (5.1 MB)
+downloaded 5.1 MB
+
+
+The downloaded source packages are in
+	‘C:\Users\allison.plaxco\AppData\Local\Temp\Rtmpo9mvQi\downloaded_packages’
+Downloading GitHub repo jesse-smith/coviData@HEAD
+Installing 11 packages: vctrs, cli, digest, jsonlite, curl, dplyr, tidyr, vroom, stringdist, openxlsx, data.table
+Warning: packages ‘dplyr’, ‘tidyr’ are in use and will not be installed
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/cli_3.4.1.zip'
+Content type 'application/zip' length 1256122 bytes (1.2 MB)
+downloaded 1.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/curl_4.3.3.zip'
+Content type 'application/zip' length 2492421 bytes (2.4 MB)
+downloaded 2.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/vroom_1.6.0.zip'
+Content type 'application/zip' length 1350284 bytes (1.3 MB)
+downloaded 1.3 MB
+
+Warning: cannot remove prior installation of package ‘cli’
+Warning: restored ‘cli’
+Warning: cannot remove prior installation of package ‘curl’
+Warning: restored ‘curl’
+Warning: cannot remove prior installation of package ‘vroom’
+Warning: restored ‘vroom’
+installing the source packages ‘vctrs’, ‘digest’, ‘jsonlite’, ‘stringdist’, ‘openxlsx’, ‘data.table’
+
+trying URL 'https://cran.rstudio.com/src/contrib/vctrs_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 959393 bytes (936 KB)
+downloaded 936 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/digest_0.6.30.tar.gz'
+Content type 'application/x-gzip' length 163424 bytes (159 KB)
+downloaded 159 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/jsonlite_1.8.3.tar.gz'
+Content type 'application/x-gzip' length 1053099 bytes (1.0 MB)
+downloaded 1.0 MB
+
+trying URL 'https://cran.rstudio.com/src/contrib/stringdist_0.9.9.tar.gz'
+Content type 'application/x-gzip' length 862216 bytes (842 KB)
+downloaded 842 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/openxlsx_4.2.5.1.tar.gz'
+Content type 'application/x-gzip' length 1341046 bytes (1.3 MB)
+downloaded 1.3 MB
+
+trying URL 'https://cran.rstudio.com/src/contrib/data.table_1.14.4.tar.gz'
+Content type 'application/x-gzip' length 5304297 bytes (5.1 MB)
+downloaded 5.1 MB
+
+
+The downloaded source packages are in
+	‘C:\Users\allison.plaxco\AppData\Local\Temp\Rtmpo9mvQi\downloaded_packages’
+Warning: package ‘coviData’ is in use and will not be installed
+There were 33 warnings (use warnings() to see them)
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Create functions
+Load NCA/NBS data
+Load NIT data
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1 seconds...
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1 seconds...
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failure when receiving data from the peer
+Calls: download_variant_nit ... is.response -> <Anonymous> -> status_code -> <Anonymous>
+Execution halted
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Create functions
+Load NCA/NBS data
+Load NIT data
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1 seconds...
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 3.4 seconds...
+Load packages
+Registered S3 methods overwritten by 'readr':
+  method                    from 
+  as.data.frame.spec_tbl_df vroom
+  as_tibble.spec_tbl_df     vroom
+  format.col_spec           vroom
+  print.col_spec            vroom
+  print.collector           vroom
+  print.date_names          vroom
+  print.locale              vroom
+  str.col_spec              vroom
+-- Attaching packages ----------------------------------------------------------------------------------------------------- tidyverse 1.3.2 --
+v ggplot2 3.3.6     v purrr   0.3.5
+v tibble  3.1.8     v stringr 1.4.1
+v tidyr   1.2.0     v forcats 0.5.2
+v readr   2.1.3     
+-- Conflicts -------------------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: ‘magrittr’
+
+The following object is masked from ‘package:purrr’:
+
+    set_names
+
+The following object is masked from ‘package:tidyr’:
+
+    extract
+
+Create functions
+Load NCA/NBS data
+Load NIT data
+Error in curl::curl_fetch_memory(url, handle = handle): Failure when receiving data from the peer
+Request failed [ERROR]. Retrying in 1.9 seconds...
+
+Error in curl::curl_fetch_memory(url, handle = handle): Operation was aborted by an application callback
+Request failed [ERROR]. Retrying in 1 seconds...
+
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Operation was aborted by an application callback
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failure when receiving data from the peer
+Error in is.response(x) : object 'response' not found
+Error in print(result) : object 'result' not found
+Error: object 'api_token' not found
+Error in body_config(body, match.arg(encode)) : 
+  object 'api_params' not found
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Load NCA/NBS data
+Load NIT data
+mutate: changed 1,209,995 values (53%) of 'patient_first_name' (0 new NA)
+        changed 1,227,616 values (54%) of 'patient_last_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 2,187,551 values (96%) of 'patient_street_addr_1' (0 new NA)
+        changed 369,300 values (16%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (1,999,508)
+           > rows only in y  (        0)
+           > matched rows       280,610
+           >                 ===========
+           > rows total         280,610
+semi_join: added no columns
+           > rows only in x  (  661,702)
+           > rows only in y  (        0)
+           > matched rows     1,618,416
+           >                 ===========
+           > rows total       1,618,416
+Plot epicurve
+Joining, by = c("nbs", "test_date")
+`summarise()` has grouped output by 'week'. You can override using the `.groups` argument.
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Load NCA/NBS data
+Load NIT data
+mutate: changed 1,214,739 values (53%) of 'patient_first_name' (0 new NA)
+        changed 1,232,499 values (54%) of 'patient_last_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 2,198,700 values (96%) of 'patient_street_addr_1' (0 new NA)
+        changed 373,921 values (16%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (2,010,843)
+           > rows only in y  (        0)
+           > matched rows       281,179
+           >                 ===========
+           > rows total         281,179
+semi_join: added no columns
+           > rows only in x  (  664,845)
+           > rows only in y  (        0)
+           > matched rows     1,627,177
+           >                 ===========
+           > rows total       1,627,177
+Plot epicurve
+Joining, by = c("nbs", "test_date")
+`summarise()` has grouped output by 'week'. You can override using the `.groups` argument.
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Load NCA/NBS data
+Load NIT data
+mutate: changed 1,219,979 values (53%) of 'patient_first_name' (0 new NA)
+        changed 1,237,801 values (54%) of 'patient_last_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 2,206,819 values (96%) of 'patient_street_addr_1' (0 new NA)
+        changed 375,635 values (16%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (2,018,585)
+           > rows only in y  (        0)
+           > matched rows       281,770
+           >                 ===========
+           > rows total         281,770
+semi_join: added no columns
+           > rows only in x  (  667,471)
+           > rows only in y  (        0)
+           > matched rows     1,632,884
+           >                 ===========
+           > rows total       1,632,884
+Plot epicurve
+Joining, by = c("nbs", "test_date")
+`summarise()` has grouped output by 'week'. You can override using the `.groups` argument.
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Load NCA/NBS data
+Load NIT data
+mutate: changed 1,224,765 values (53%) of 'patient_first_name' (0 new NA)
+        changed 1,242,641 values (54%) of 'patient_last_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 2,214,729 values (96%) of 'patient_street_addr_1' (0 new NA)
+        changed 377,162 values (16%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (2,026,000)
+           > rows only in y  (        0)
+           > matched rows       282,357
+           >                 ===========
+           > rows total         282,357
+semi_join: added no columns
+           > rows only in x  (  670,235)
+           > rows only in y  (        0)
+           > matched rows     1,638,122
+           >                 ===========
+           > rows total       1,638,122
+Plot epicurve
+Joining, by = c("nbs", "test_date")
+`summarise()` has grouped output by 'week'. You can override using the `.groups` argument.
+Load packages
+── Attaching packages ─────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.5
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.3     ✔ forcats 0.5.2
+── Conflicts ────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Load NCA/NBS data
+Load NIT data
+mutate: changed 1,232,744 values (53%) of 'patient_first_name' (0 new NA)
+        changed 1,250,710 values (54%) of 'patient_last_name' (0 new NA)
+        converted 'patient_dob' from character to Date (0 new NA)
+        changed 2,227,684 values (96%) of 'patient_street_addr_1' (0 new NA)
+        changed 380,040 values (16%) of 'patient_zip' (0 new NA)
+        converted 'specimen_coll_dt' from character to Date (0 new NA)
+rename: renamed one variable (patient_street_addr)
+semi_join: added no columns
+           > rows only in x  (2,038,164)
+           > rows only in y  (        0)
+           > matched rows       283,519
+           >                 ===========
+           > rows total         283,519
+semi_join: added no columns
+           > rows only in x  (  672,224)
+           > rows only in y  (        0)
+           > matched rows     1,649,459
+           >                 ===========
+           > rows total       1,649,459
+Plot epicurve
+Joining, by = c("nbs", "test_date")
+`summarise()` has grouped output by 'week'. You can override using the `.groups` argument.

@@ -11,7 +11,9 @@ coviData::ennotify_set_options(
   "Allison.Plaxco@shelbycountytn.gov",
   "Liang.Li@shelbycountytn.gov",
   "Rachel.Rice@shelbycountytn.gov",
-  "Jennifer.Kmet@shelbycountytn.gov"
+  "Jennifer.Kmet@shelbycountytn.gov",
+  "Faisal.Mohamed@shelbycountytn.gov",
+  "Richard.Ewool@shelbycountytn.gov"
 )
 
 # Import -----------------------------------------------------------------------
@@ -76,6 +78,12 @@ insist_download_nbs_snapshot <- purrr::insistently(
   coviData::download_nbs_snapshot
 )
 
+#Add this when you want to download that additional file
+insist_download_extra_nbs_snapshot <- purrr::insistently(
+  coviData:::download_extra_case_file
+)
+
+
 # insist_convert_nbs_snapshot <- purrr::insistently(
 #   coviData::convert_nbs_snapshot
 # )
@@ -98,6 +106,13 @@ download_nbs <- function() {
   # insist_convert_nbs_snapshot(force = TRUE)
   # Sys.sleep(3)
 }
+
+#add this when ready to split the file
+download_extra_nbs <- function() {
+  insist_download_extra_nbs_snapshot(force = TRUE)
+  Sys.sleep(3)
+}
+
 
 download_pcr <- function() {
   insist_download_pcr_snapshot(force = TRUE)
@@ -134,6 +149,8 @@ try_download <- function() {
     download_nbs()
     coviData::ennotify_context("downloading PCR data")
     download_pcr()
+    coviData::ennotify_context("downloading extra investigation data")
+    download_extra_nbs()
 
     notify_finish()
   }
@@ -166,6 +183,41 @@ while (!is_updated) {
 }
 gc(verbose = FALSE)
 
+
+
+# Combine the two parts of the case file and size ---------------------------------
+
+
+#read both of the files
+cases1 <- data.table::fread(file = paste0(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "Sandbox data pull Final/", Sys.Date(), " Final Data Pull_part1.csv"
+), colClasses = "character", data.table= TRUE)
+
+
+cases2 <- data.table::fread(file = paste0(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "Additional case file/", Sys.Date(), " Additional Data Pull.csv"
+), colClasses = "character", data.table= TRUE)
+
+merged <- rbind(cases1, cases2)
+
+
+data.table::fwrite(merged, paste0(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "Sandbox data pull Final/", Sys.Date(), " Final Data Pull.csv"),
+       sep=",", na="", compress = "none",scipen=999, eol="\n")
+
+#remove the extra file
+file.remove(paste0(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "Additional case file/", Sys.Date(), " Additional Data Pull.csv"
+))
+file.remove(paste0(
+  "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/",
+  "Sandbox data pull Final/", Sys.Date(), " Final Data Pull_part1.csv"
+))
+
 # Outputs ----------------------------------------------------------------------
 # Load data
 inv <- coviData::process_inv()
@@ -182,19 +234,12 @@ covidReport:::rpt_weekly_pptx(inv = inv, pcr = pcr)
 gc(verbose = FALSE)
 
 
-# coviData::ennotify_context("creating daily report")
-# covidReport::rpt_daily_pptx(inv = inv, pcr = pcr,
-#                             dir =  "C:/Users/allison.plaxco/Desktop/automated")
-# gc(verbose = FALSE)
-
-
-
 # Create Google Sheets output
 coviData::ennotify_context("creating google sheets timeseries")
 coviData::write_file_delim(
   covidReport::gs_timeseries(inv = inv, pcr = pcr),
   path = paste0(
-    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_timeseries_", Sys.Date(), ".csv"
+    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_timeseries_", coviData::date_inv(), ".csv"
   ),
   force = TRUE
 )
@@ -204,26 +249,19 @@ coviData::ennotify_context("creating demographic report")
 covidReport::rpt_demog_pptx(inv = coviData::pos(inv))
 gc(verbose = FALSE)
 
-# Send status update email
-coviData::ennotify_context("sending daily email")
-to <- coviData::ennotify_to()
-if (weekdays(lubridate::today()) == "Thursday") {
-  to <- c(to, "Jennifer.Kmet@shelbycountytn.gov")
-}
-covidReport::rpt_daily_mail(to = to, inv = inv, pcr = pcr)
-covidReport:::rpt_weekly_mail(to = to, inv = inv, pcr = pcr)
+
 
 # Remove unneeded data
 pos_inv <- coviData::pos(inv)
-remove(inv)
+#remove(inv)
 gc(verbose = FALSE)
 
-# Switch to report errors to Allison only (except Thursdays)
-if (weekdays(lubridate::today()) != "Thursday") {
-  coviData::ennotify_to(
-    "Allison.Plaxco@shelbycountytn.gov"
-  )
-}
+# # Switch to report errors to Allison only (except Thursdays)
+# if (weekdays(lubridate::today()) != "Thursday") {
+#   coviData::ennotify_to(
+#     "Allison.Plaxco@shelbycountytn.gov"
+#   )
+# }
 
 # Maps first so I can remove `pcr`
 
@@ -247,7 +285,7 @@ path_test_map <- coviData::path_create(
   ext = "png"
 )
 coviData::save_plot(grant_test_map, path = path_test_map, ratio = c(12,9), size = 1.125)
-remove(pcr)
+#remove(pcr)
 gc(verbose = FALSE)
 
 
@@ -284,7 +322,7 @@ active_map[["data"]] %>%
   ) %>%
   dplyr::select("zip", "n_active", "n_test") %>%
   coviData::write_file_delim(paste0(
-    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips",Sys.Date(),".csv")
+    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/gs_zips",coviData::date_inv(),".csv")
   )
 
 # Update deaths linelist
@@ -344,7 +382,7 @@ gc(verbose = FALSE)
 rt_plot <- covidModel::plot_rt(rt, .rough_rt = rough_rt)
 rt_path <- coviData::path_create(
   "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/jtf_figs/rt_fig",
-  paste0("rt_plot", Sys.Date()),
+  paste0("rt_plot", coviData::date_inv()),
   ext = "svg"
 )
 if (rlang::is_interactive()) show(rt_plot)
@@ -401,7 +439,7 @@ if (weekdays(lubridate::today()) == "Thursday") {
     gt::gtsave(
       coviData::path_create(
         "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/jtf_figs/rt_table",
-        paste0("rt_table_", Sys.Date()),
+        paste0("rt_table_", coviData::date_inv()),
         ext = "png"
       )
     )
@@ -426,7 +464,7 @@ active_ped_map[["data"]] %>%
   ) %>%
   dplyr::select("zip", "n_active") %>%
   coviData::write_file_delim(paste0(
-    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/PED_only_gs_zips",Sys.Date(),".csv")
+    "V:/EPI DATA ANALYTICS TEAM/COVID SANDBOX REDCAP DATA/PED_only_gs_zips",coviData::date_inv(),".csv")
   )
 
 #add testing sites to the maps
@@ -435,3 +473,13 @@ covidReport:::add_ts_grant_test_map()
 covidReport:::add_ts_active_map()
 covidReport:::add_ts_ped_map()
 covidReport:::add_ts_test_map()
+
+
+# Send status update email
+coviData::ennotify_context("sending daily email")
+to <- coviData::ennotify_to()
+if (weekdays(lubridate::today()) == "Thursday") {
+  to <- c(to, "Jennifer.Kmet@shelbycountytn.gov")
+}
+covidReport::rpt_daily_mail(to = to, inv = inv, pcr = pcr)
+covidReport:::rpt_weekly_mail(to = to, inv = inv, pcr = pcr)
