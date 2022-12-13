@@ -478,8 +478,8 @@ covidReport:::add_ts_test_map()
 # Send status update email
 coviData::ennotify_context("sending daily email")
 to <- coviData::ennotify_to()
-if (weekdays(lubridate::today()) == "Thursday") {
-  to <- c(to, "Jennifer.Kmet@shelbycountytn.gov")
-}
+# if (weekdays(lubridate::today()) == "Thursday") {
+#   to <- c(to, "Jennifer.Kmet@shelbycountytn.gov")
+# }
 covidReport::rpt_daily_mail(to = to, inv = inv, pcr = pcr)
 covidReport:::rpt_weekly_mail(to = to, inv = inv, pcr = pcr)
